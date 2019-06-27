@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
 <head>
-  <!-- Google Tag Manager -->
-  <script>（function（w,d,s,l,i){w[l]=w[l]||[];w[l].push（{'gtm.start':
-  new Date（).getTime（),event:'gtm.js'});var f=d.getElementsByTagName（s)[0],
-  j=d.createElement（s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore（j,f);
-  })（window,document,'script','dataLayer','GTM-M65KWKC');</script>
-  <!-- End Google Tag Manager -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
@@ -27,32 +20,23 @@
 
 <style>
     body{
-
         margin:5px;
         background: #f5f5f5;
-        font-family: 'Righteous', cursive;
+        font-family: 'Noto Sans TC', sans-serif;
     }
     .SelectorBlock{
-        padding: 20px;
-    width: calc(100% - 40px);
-
+      padding: 20px;
+      width: calc(100% - 40px);
     }
     .Selection-Box{
         border-radius: 4px;
-
         width: calc(50% - 4px);
-
-
-
-
         height: 200px;
         background: #fcfcfc;
         cursor: pointer;
-
         display:inline-block;
         text-align: center;
         position: relative;
-
     }
     .Selection-Submit{
         background: #38f;
@@ -64,7 +48,6 @@
         margin-top:10px;
         text-align: center;
         padding:5px;
-
     }
     img{
         width:100%;
@@ -79,7 +62,6 @@
         border-radius: 4px;
         min-height: 25px;
         padding: 5px;
-
         background: #ffffff;
     }
     .Stitle>.time{
@@ -160,116 +142,80 @@
 </style>
 
 
-<!-- scrolling -->
-<script>
-    $（document).ready（function （) {
-        // Add smooth scrolling to all links
-        $（"a").on（'click', function （event) {
-            // Make sure this.hash has a value before overriding default behavior
-            if （this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault（);
-                // Store hash
-                var hash = this.hash;
-                // Using jQuery's animate（) method to add smooth page scroll
-                // The optional number （800) specifies the number of milliseconds it takes to scroll to the specified area
-                $（'html, body').animate（{
-                    scrollTop: $（hash).offset（).top
-                }, 800, function （) {
-                    // Add hash （#) to URL when done scrolling （default click behavior)
-                    window.location.hash = hash;
-                });
-            } // End if
-        });
-    });
-</script>
-<script type="text/javascript">
-  document.addEventListener（"touchstart", function（) {}, true);
-</script>
-<!-- end of scrolling -->
 
 <body>
 
-  <!-- Google Tag Manager （noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M65KWKC"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager （noscript) -->
+    <div class="HeaderBlock" id="HeaderBlock">
+      <div class="Ititle"></div>
+      <div class="Stitle">
+          你的未來在哪裡？
+          <span class="time">2019-06-12 11:33</span>
+      </div>
+    </div>
+    <div class="VoteNumberBlock">Voted: <span class="VoteNumber">3</span></div>
+    <div class="GraphicBlock" id="GraphicBlock">
+    </div>
+    <div class="SelectorBlock" id="SelectorBlock">
 
-
-    <body>
-        <div class="HeaderBlock" id="HeaderBlock">
-            <div class="Ititle"></div>
-            <div class="Stitle">
-                你的未來在哪裡？
-                <span class="time">2019-06-12 11:33</span>
-            </div>
+      <div class="Selection-Box " onclick="Vote( 0 , this)" >
+        <div>
+          <img src="">
+          <div class="option">
+              前面
+          </div>
         </div>
-        <div class="VoteNumberBlock">Voted: <span class="VoteNumber">3</span></div>
-        <div class="GraphicBlock" id="GraphicBlock">
+        <div class="ColorBar RightBar"  style="width:0%" >
+          0%
         </div>
-        <div class="SelectorBlock" id="SelectorBlock">
+      </div>
 
-          <div class="Selection-Box " onclick="Vote( 0 , this)" >
-            <div>
-              <img src="">
-              <div class="option">
-                  前面
-              </div>
-            </div>
-            <div class="ColorBar RightBar"  style="width:0%" >
-              0%
+      <div class="Selection-Box " onclick="Vote( 1 , this)" >
+        <div>
+          <img src="">
+          <div class="option">
+              後面
+          </div>
+        </div>
+        <div class="ColorBar LeftBar"  style="width:33.333333333333%" >
+          33.333333333333%
+        </div>
+      </div>
+
+      <div class="Selection-Box SelectedBox " onclick="Vote( 2 , this)" >
+        <div>
+          <img src="">
+          <div class="option">
+            上面
+          </div>
+        </div>
+
+        <div class="ColorBar RightBar"  style="width:33.333333333333%">
+          33.333333333333%
+        </div>
+
+        </div>
+        <div class="Selection-Box " onclick="Vote( 3 , this)" >
+          <div>
+            <img src="">
+            <div class="option">
+                下面
             </div>
           </div>
-
-          <div class="Selection-Box " onclick="Vote( 1 , this)" >
-            <div>
-              <img src="">
-              <div class="option">
-                  後面
-              </div>
-            </div>
-            <div class="ColorBar LeftBar"  style="width:33.333333333333%" >
-              33.333333333333%
-            </div>
+          <div class="ColorBar LeftBar"  style="width:33.333333333333%">
+            33.333333333333%
           </div>
-
-          <div class="Selection-Box SelectedBox " onclick="Vote( 2 , this)" >
-            <div>
-              <img src="">
-              <div class="option">
-                上面
-              </div>
-            </div>
-
-                <div class="ColorBar RightBar"  style="width:33.333333333333%"
-                    >
-                        33.333333333333%                            </div>
-
-            </div>
-
-                                <div class="Selection-Box " onclick="Vote( 3 , this)" >
-                <div>
-                    <img src="">
-
-                    <div class="option">
-                        下面
-                    </div>
-                </div>
-
-                <div class="ColorBar LeftBar"  style="width:33.333333333333%"
-                    >
-                        33.333333333333%                            </div>
-
-            </div>
-
-
-
         </div>
-        <form id='VoteForm' action='/IXPANEL/SocialBackOffice/Survey/vote.php?AppID=U58d0e3fa81c736b2e2e10171c302d8c9&SCODE=3990&fbclid=IwAR2tKNum9l2_K2TL6KTCGn0epO2YojxHmxQaECx6HJ0gvBEJL7Raussvr6I' method='POST'>
-            <input id="SelectionInput" name="VOTESELECTION" hidden/>
-            <input id="VoteInput" name="VOTE" hidden/>
-
-        </form>
-        <div class="footer">iX:Panel x BOTMILKY 2019</div>
-    </body>
+    </div>
+    <form id='VoteForm' action='/IXPANEL/SocialBackOffice/Survey/vote.php?AppID=U58d0e3fa81c736b2e2e10171c302d8c9&SCODE=3990&fbclid=IwAR2tKNum9l2_K2TL6KTCGn0epO2YojxHmxQaECx6HJ0gvBEJL7Raussvr6I' method='POST'>
+        <input id="SelectionInput" name="VOTESELECTION" hidden/>
+        <input id="VoteInput" name="VOTE" hidden/>
+    </form>
+    <!--- Footer --->
+    <footer class="footer mt-auto py-3 text-center small">
+      <div class="container">
+        <span class="text-muted">iX:Panel x BOTMILKY 2019</span>
+      </div>
+    </footer>
+    <!--- end of Footer --->
+  </body>
 </html>
