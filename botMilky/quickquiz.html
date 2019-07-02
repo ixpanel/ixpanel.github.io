@@ -168,7 +168,7 @@
   <div class="container">
     <div id="SelectorBlock">
       <div class="row align-content-center my-2">
-        <div class="col-sm-6 col-md bg-white py-3 px-3 text-center">
+        <div class="col-6 col-md bg-white py-3 px-3 text-center">
           <a href="#" class="text-reset" onclick="Vote( 0 , this)">
             <img src="img/600x400.png" class="img-fluid" alt="">
             <div class="option">
@@ -230,4 +230,41 @@
   <!--- end of Footer --->
 
   </body>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+    var Sumbited = true;
+  function drawChart() {
+
+    var data = google.visualization.arrayToDataTable([
+    ['','']
+    ,["後面",1],["上面",1],["下面",1]
+    ]);
+
+    var options = {
+
+      is3D: true,
+    };
+/*
+    var chart = new google.visualization.PieChart(document.getElementById('GraphicBlock'));
+
+    chart.draw(data,options);*/
+  }
+  function Vote(VoteIndex,evt){
+      if(Sumbited==true) return;
+      for(var i =0 ;i<document.getElementsByClassName("Selection-Box").length;i++){
+        document.getElementsByClassName("Selection-Box")[i].style.background="";
+        document.getElementsByClassName("Selection-Box")[i].style.color="";
+      }
+      evt.style.background = "#848484";
+      evt.style.color = '#fff';
+    document.getElementById("SelectionInput").value = VoteIndex;
+    document.getElementById("VoteInput").value = "true";
+    document.getElementById("VoteForm").submit();
+
+  }
+
+</script>
+
 </html>
