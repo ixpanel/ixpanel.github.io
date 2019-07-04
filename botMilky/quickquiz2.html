@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+    <head>
+      <title>BOTMILKY:AUTO-SURVEY</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700,900&display=swap&subset=chinese-traditional" rel="stylesheet">
+
+    </head>
+    <style>
+       body{
+          font-family: 'Noto Sans TC', sans-serif;
+          background: #f5f5f5;
+          text-align:center;
+        }
+        .SelectorBlock{
+          text-align:center;
+          padding-top:5px;
+          width: 1015px;
+          display: inline-block;
+        }
+        .Selection-Box{
+            width: 454px;
+        height: 250px;
+        cursor: pointer;
+        display: inline-block;
+        text-align: center;
+        margin-top: 5px;
+
+        margin-bottom: 5px;
+        position: relative;
+
+        }
+        .Selection-Submit{
+            background: #38f;
+            color:whitesmoke;
+            width: calc(100% - 10px);
+            height: 20px;
+            border-radius: 4px;
+            border:1px solid #8ebdff;
+            margin-top:10px;
+            text-align: center;
+            padding:5px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+            border-style: none;
+        }
+        .HeaderBlock{
+
+         width:1015px;
+         display: inline-block;
+        }
+        .Stitle{
+            text-align: left;
+            font-size: 1.25rem;
+
+            width: calc(100% - 50px);
+            min-height: 25px;
+            background: #ffffff;
+            color: #212529;
+
+            padding:25px;
+            font-weight: 500 !important;
+            line-height: 1.2;
+        }
+        .Stitle>.time{
+
+            font-weight: normal;
+            font-size: 16px;
+            color:#6c757d;
+            margin-top: 10px;
+            display: block;
+        }
+        .Ititle{
+            margin-top: 12px;
+            border-radius: 4px;
+            width: 100%;
+            height:300px;
+            background: #ffffff;
+        }
+        .Ititle>img{
+            width:100%;
+            height:100%;
+        }
+        .Selection-Box>div>img{
+            width:100%;
+            height: 200px;
+            z-index: 1;
+            vertical-align: middle;
+
+        }
+        .Selection-Box>div{
+            display: inline-block;
+
+        }
+        .Selection-Box>div:nth-child(1){
+            width: calc(100% - 10px);
+            height: calc(100% - 10px);
+
+
+        }
+        .Selection-Box>div:nth-child(2){
+            width: 100%;
+            position: absolute;
+            bottom:0px;
+            left:0px;
+            height: 20px;
+
+            z-index: 2;
+
+        }
+
+        .LeftBar{
+            background:#ff6363;
+            text-align: left;
+
+            border-radius: 0px 4px 4px 0px;
+
+        }
+        .RightBar{
+            background:#38f;
+            text-align: left;
+            border-radius: 0px 4px 4px 0px;
+
+
+        }
+        .SelectedBox{
+            border:#cde2ff 1px solid;
+            font-weight: bolder;
+            background-color: #f5f5f5 !important;
+        }
+        .Selected-Form{
+            display: none;
+        }
+        .footer{
+            text-align: center;
+            bottom: 0px;
+            right: 5px;
+            font-size: 12px;
+            margin-top:50px;
+
+        }
+        .VoteNumber{
+            font-weight: normal;
+            font-size: 16px;
+            color:#6c757d;
+            margin-top: 10px;
+            display: block;
+        }
+
+        @media screen and (max-width: 768px){
+            .SelectorBlock{
+                width:100%;
+            }
+            .HeaderBlock{
+                width:100%;
+            }
+            .Selection-Box{
+                width:calc(100%);
+            }
+        }
+        @media screen and (min-width: 2000px){
+            .SelectorBlock{
+                width:70%;
+            }
+            .HeaderBlock{
+                width:70%;
+            }
+            .Selection-Box{
+                width: 45%;
+            }
+        }
+    </style>
+
+    <body>
+        <div class="HeaderBlock" id="HeaderBlock">
+        <div class="Stitle">
+            最代表你的日常是什麼？
+            <span class="time">2019-07-03 23:03</span>
+            <span class="VoteNumber">Voted: 3</span>
+        </div>
+
+            <div class="Ititle"><img src='http://daily-life-units.beamedia.co/img/title.png'/></div>
+
+        </div>
+
+
+        <div class="SelectorBlock" id="SelectorBlock">
+          <div class="Selection-Box SelectedBox " onclick="Vote( 0 , this)" >
+            <div>
+              <img src="http://daily-life-units.beamedia.co/img/sq/sq_waiting.jpg">
+              <div class="option">
+                  電話等嘸人
+              </div>
+            </div>
+            <div class="ColorBar RightBar"  style="width:66.67%">
+              66.67%
+            </div>
+          </div>
+
+          <div class="Selection-Box " onclick="Vote( 1 , this)" >
+            <div>
+              <img src="http://daily-life-units.beamedia.co/img/sq/sq_reward.jpg">
+              <div class="option">
+              整天等中獎
+              </div>
+            </div>
+            <div class="ColorBar LeftBar"  style="width:33.33%">
+              33.33%
+            </div>
+          </div>
+
+          <div class="Selection-Box " onclick="Vote( 2 , this)" >
+            <div>
+            <img src="http://daily-life-units.beamedia.co/img/sq/sq_awkward.jpg">
+
+              <div class="option">
+              一人吃飯飯
+              </div>
+            </div>
+            <div class="ColorBar RightBar"  style="width:0%">
+              0%
+            </div>
+          </div>
+
+          <div class="Selection-Box " onclick="Vote( 3 , this)" >
+            <div>
+            <img src="http://daily-life-units.beamedia.co/img/sq/sq_late.jpg">
+              <div class="option">
+              天天快遲到
+              </div>
+            </div>
+
+            <div class="ColorBar LeftBar"  style="width:100%">
+            100%
+            </div>
+          </div>
+        </div>
+
+        <form id='VoteForm' action='/IXPANEL/SocialBackOffice/Survey/vote.php?AppID=U58d0e3fa81c736b2e2e10171c302d8c9&SCODE=3998' method='POST'>
+            <input id="SelectionInput" name="VOTESELECTION" hidden/>
+            <input id="VoteInput" name="VOTE" hidden/>
+        </form>
+        <div class="footer">iX:Panel x BOTMILKY 2019</div>
+
+    </body>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+        var Sumbited = true;
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+        ['','']
+        ,["電話等嘸人",2],["整天等中獎",1],["天天快遲到",3]
+        ]);
+
+        var options = {
+
+          is3D: true,
+        };
+/*
+        var chart = new google.visualization.PieChart(document.getElementById('GraphicBlock'));
+
+        chart.draw(data,options);*/
+      }
+      function Vote(VoteIndex,evt){
+          if(Sumbited==true) return;
+          for(var i =0 ;i<document.getElementsByClassName("Selection-Box").length;i++){
+            document.getElementsByClassName("Selection-Box")[i].style.background="";
+            document.getElementsByClassName("Selection-Box")[i].style.color="";
+          }
+          evt.style.background = "#848484";
+          evt.style.color = '#fff';
+        document.getElementById("SelectionInput").value = VoteIndex;
+        document.getElementById("VoteInput").value = "true";
+        document.getElementById("VoteForm").submit();
+
+      }
+
+    </script>
+
+</html>
