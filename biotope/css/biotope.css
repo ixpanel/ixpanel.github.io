@@ -14,14 +14,6 @@ html {
   box-sizing: inherit;
   }
 
-/** {
-  border-radius: 0 !important;
-  -webkit-border-radius: 0 !important;
-     -moz-border-radius: 0 !important;
-          border-radius: 0 !important;
-}*/
-
-
 /* Lineup of Wrappers */
 .wrapper {
   padding-top: 3rem;
@@ -87,6 +79,12 @@ html {
 
 
 /* layout */
+#heroMobile {
+  background-image: url("https://ixpanel.github.io/biotope/img/hero.png");
+  background-position: right center;
+  background-size: 155vw;
+  background-repeat: no-repeat;
+}
 .bg-darkBlue {
   background-color: #126082;
 }

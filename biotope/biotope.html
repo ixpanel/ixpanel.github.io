@@ -97,30 +97,44 @@ body {
     </ul>
   </nav>
 
-  <div class="container-fluid bg-paleCyan" style="margin-top: 56px">
+  <div class="container-fluid bg-paleCyan d-block d-md-none" style="margin-top: 56px" id="heroMobile">
     <div class="row justify-content-center">
-      <div class="col d-sm-block d-none">
-         <img src="img/hero.png" alt="" class="img-fluid">
-      </div>
-      <div class="col d-sm-none d-block">
-         <img src="img/human.png" alt="" class="img-fluid">
+      <div class="col-11 py-3">
+          <img src="img/logoType.png" alt="Go Button" class="img-fluid">
       </div>
     </div>
-    <div class="row justify-content-center">
-      <div class="col-4 logoType">
-        <a href="#">
-          <img src="img/logoType.png" alt="Go Button" class="img-fluid">
-        </a>
-        <p class="h6 text-darkBlue my-3 ml-2">
-          文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明
-        </p>
-
+    <div class="row justify-content-center no-gutters" style="margin-top:35vh">
+      <div class="col-7">
+         <img src="img/human.png" alt="" class="img-fluid border">
       </div>
+      <div class="col-5">
+        <p class="h6 text-darkBlue my-3">
+          文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-paleCyan d-md-block d-none" style="margin-top: 56px">
+
+    <div class="row justify-content-center">
+      <div class="col d-md-block d-none">
+         <img src="img/hero.png" alt="" class="img-fluid">
+      </div>
+
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-4 logoType d-none d-md-block">
+        <img src="img/logoType.png" class="img-fluid">
+        <p class="h6 text-darkBlue my-3 ml-2">
+          文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明
+        </p>
+      </div>
+
       <div class="col-4">
       </div>
     </div>
     <div class="row justify-content-center">
-      <div class="col-3 col-md-2 overlay hoverLarge">
+      <div class="col-4 col-md-2 overlay hoverLarge">
         <a href="#">
           <img src="img/gogoBtn.png" alt="Go Button" class="img-fluid drop-shadow float-right mr-3">
         </a>
@@ -175,7 +189,7 @@ body {
           <div class="col-6 col-md-4">
             <img src="img/item_switch.png" alt="grand prize switch" class="img-fluid float-right">
           </div>
-          <div class="col-4 my-auto d-none d-md-block border border-info">
+          <div class="col-4 my-auto d-none d-md-block border">
             <p class="h1 text-orange">頭獎<small>（一名）</small></p>
             <p class="h4 text-darkBlue">任天堂Switch+瑪莉歐派對</p>
           </div>
