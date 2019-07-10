@@ -68,6 +68,14 @@ html {
   color:#d3d3d3;
   cursor: pointer;
 }
+.linkTextDarkBlue {
+  color:#126082;
+  cursor: pointer;
+}
+.linkTextDarkBlue:hover {
+  color:#31ade3;
+  cursor: pointer;
+}
 .linkTextDecoDark {
   color:black;
   cursor: pointer;
