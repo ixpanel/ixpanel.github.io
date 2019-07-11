@@ -96,31 +96,15 @@ body {
 
     </ul>
   </nav>
+  <!-- end of nav -->
 
-  <div class="container-fluid bg-paleCyan d-block d-md-none" style="margin-top: 56px" id="heroMobile">
-    <div class="row justify-content-center">
-      <div class="col-11 py-3">
-          <img src="img/logoType.png" alt="Go Button" class="img-fluid">
-      </div>
-    </div>
-    <div class="row justify-content-center no-gutters" style="margin-top:35vh">
-      <div class="col-7">
-         <img src="img/human.png" alt="" class="img-fluid border">
-      </div>
-      <div class="col-5">
-        <p class="h6 text-darkBlue my-3">
-          文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明
-        </p>
-      </div>
-    </div>
-  </div>
+  <!-- hero -->
+    <!-- desktop hero -->
   <div class="container-fluid bg-paleCyan d-md-block d-none" style="margin-top: 56px">
-
     <div class="row justify-content-center">
       <div class="col d-md-block d-none">
          <img src="img/hero.png" alt="" class="img-fluid">
       </div>
-
     </div>
     <div class="row justify-content-center">
       <div class="col-4 logoType d-none d-md-block">
@@ -129,18 +113,45 @@ body {
           文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明
         </p>
       </div>
-
       <div class="col-4">
       </div>
     </div>
     <div class="row justify-content-center">
-      <div class="col-4 col-md-2 overlay hoverLarge">
+      <div class="col-2 overlay hoverLarge">
         <a href="#">
           <img src="img/gogoBtn.png" alt="Go Button" class="img-fluid drop-shadow float-right mr-3">
         </a>
       </div>
     </div>
   </div>
+  <!-- mobile hero -->
+  <div class="container-fluid bg-paleCyan d-block d-md-none" style="margin-top: 56px" id="heroMobile">
+    <div class="row justify-content-center no-gutters">
+      <div class="col-4 overlayM hoverLarge">
+        <a href="#">
+          <img src="img/gogoBtn.png" alt="Go Button" class="img-fluid drop-shadow float-right">
+        </a>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-11 py-3">
+          <img src="img/logoType.png" alt="Go Button" class="img-fluid">
+      </div>
+    </div>
+    <div class="row justify-content-center no-gutters" style="margin-top:35vh">
+      <div class="col-7">
+         <img src="img/human.png" alt="" class="img-fluid ">
+      </div>
+      <div class="col-5">
+        <p class="h6 text-darkBlue" style="padding-top: 2.5rem">
+          文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- end of hero -->
 
   <!-- share modal -->
   <div class="modal fade" id="share" tabindex="-1" role="dialog" aria-hidden="true">
@@ -176,71 +187,101 @@ body {
   <!-- rewards -->
   <div class="container-fluid bg-grayishBlue wrapper" id="rewards">
     <div class="row justify-content-center my-3">
-      <div class="col-10 text-darkBlue">
+      <div class="col-10 text-darkBlue d-none d-md-block">
         <p class="display-4 font-weight-bold">抽獎獎品</p>
         <p class="h5">
-          活動期間自2018年3月20日至5月25日為止，期間內完成調查並成功加入 iX:Panel 會員者，即可擁有六項好禮抽獎資格！
+          活動期間自 2018 年 3 月 20 日至 5 月 25 日為止，期間內完成調查並成功加入 iX:Panel 會員者，即可擁有六項好禮抽獎資格！
+        </p>
+      </div>
+      <div class="col-10 text-darkBlue d-block d-md-none">
+        <p class="h1 font-weight-bold">抽獎獎品</p>
+        <p class="h6">
+          活動期間自 2018 年 3 月 20 日至 5 月 25 日為止，期間內完成調查並成功加入 iX:Panel 會員者，即可擁有六項好禮抽獎資格！
         </p>
       </div>
     </div>
     <div class="row justify-content-center">
-      <div class="col-10 bg-white" style="border-radius:20px;">
+      <div class="col-10 bg-white" style="border-radius: 20px;">
         <div class="row justify-content-center">
-          <div class="col-6 col-md-4">
-            <img src="img/item_switch.png" alt="grand prize switch" class="img-fluid float-right">
+          <div class="col col-md-5">
+            <img src="img/item_switch.png" alt="grand prize switch" class="img-fluid float-right border">
           </div>
-          <div class="col-4 my-auto d-none d-md-block border">
-            <p class="h1 text-orange">頭獎<small>（一名）</small></p>
-            <p class="h4 text-darkBlue">任天堂Switch+瑪莉歐派對</p>
+          <div class="col-4 my-auto d-none d-md-block">
+            <p class="h1 text-orange">頭獎<small> 1 名</small></p>
+            <p class="h4 text-darkBlue ">任天堂 Switch + 瑪莉歐派對</p>
           </div>
-          <div class="col-6 my-auto d-block d-md-none  border border-success">
-            <p class="h3 text-orange">頭獎<small>（一名）</small></p>
-            <p class="h6 text-darkBlue">任天堂Switch+<br>瑪莉歐派對</p>
+          <div class="col my-auto d-block d-md-none ">
+            <p class="h4 text-orange">頭獎<small> 1 名</small></p>
+            <p class="h6 text-darkBlue">任天堂 Switch<br>+ 瑪莉歐派對</p>
           </div>
         </div>
-        <hr class="orange">
-        <div class="row justify-content-center my-5">
+        <hr class="orange d-none d-md-block">
+        <div class="row justify-content-center my-md-5">
           <div class="col-10 col-md-5">
             <div class="row justify-content-center">
               <div class="col-6">
-                <img src="img/item_decathlon.png" alt="grand prize switch" class="img-fluid float-right">
+                <img src="img/item_decathlon.png" alt="grand prize switch" class="img-fluid float-right border">
               </div>
-              <div class="col-6 my-auto">
-                <p class="h1 text-orange">貳獎<small>（一名）</small></p>
+              <div class="col-6 my-auto d-none d-md-block">
+                <p class="h1 text-orange">貳獎<small> 1 名</small></p>
                 <p class="h4 text-darkBlue">迪卡儂滑板車</p>
               </div>
+              <div class="col my-auto d-block d-md-none ">
+                <p class="h4 text-orange">貳獎<small> 1 名</small></p>
+                <p class="h6 text-darkBlue">迪卡儂滑板車</p>
+              </div>
             </div>
           </div>
           <div class="col-10 col-md-5">
             <div class="row justify-content-center">
               <div class="col-6">
-                <img src="img/item_mi.png" alt="grand prize switch" class="img-fluid float-right">
+                <img src="img/item_mi.png" alt="grand prize switch" class="img-fluid float-right border">
               </div>
-              <div class="col-6 my-auto">
-                <p class="h1 text-orange">參獎<small>（二名）</small></p>
+              <div class="col-6 my-auto d-none d-md-block">
+                <p class="h1 text-orange">參獎<small>二名</small></p>
                 <p class="h4 text-darkBlue">小米藍芽耳機</p>
               </div>
+              <div class="col my-auto d-block d-md-none ">
+                <p class="h4 text-orange">參獎<small> 2 名</small></p>
+                <p class="h6 text-darkBlue">小米藍芽耳機</p>
+              </div>
+
             </div>
           </div>
         </div>
-        <hr class="orange">
+        <hr class="orange d-none d-md-block">
         <div class="row justify-content-center my-5">
-          <div class="col-10">
+          <div class="col-12">
             <div class="row justify-content-center">
-              <div class="col-4 text-center text-darkBlue">
-                <p class="h4 ">肆獎<small>（二名）</small></p>
+              <div class="col-4 text-center text-darkBlue d-none d-md-block">
+                <p class="h4">肆獎<small> 2 名</small></p>
                 <img src="img/item_stayreal.png" alt="grand prize switch" class="img-fluid float-right">
                 <p class="h4">STAYREAL 休閒包</p>
               </div>
-              <div class="col-4 text-center text-darkBlue">
-                <p class="h4 ">伍獎<small>（四名）</small></p>
+              <div class="col-4 text-center text-darkBlue d-none d-md-block">
+                <p class="h4 ">伍獎<small> 4 名</small></p>
                 <img src="img/item_vieshow.png" alt="grand prize switch" class="img-fluid float-right">
                 <p class="h4 ">威秀雙人電影票</p>
               </div>
-              <div class="col-4 text-center text-darkBlue">
-                <p class="h4 ">陸獎<small>（五百名）</small></p>
+              <div class="col-4 text-center text-darkBlue d-none d-md-block">
+                <p class="h4 ">陸獎<small> 500 名</small></p>
                 <img src="img/item_line.png" alt="grand prize switch" class="img-fluid float-right">
                 <p class="h4 ">LinePoints 15 點</p>
+              </div>
+              <div class="col-4 text-center text-darkBlue d-block d-md-none">
+                <p class="h6">肆獎<small> 2 名</small></p>
+                <img src="img/item_stayreal.png" alt="grand prize switch" class="img-fluid float-right">
+                <p class="h6">STAYREAL 休閒包</p>
+              </div>
+              <div class="col-4 text-center text-darkBlue d-block d-md-none">
+                <p class="h6">伍獎<small> 4 名</small></p>
+                <img src="img/item_vieshow.png" alt="grand prize switch" class="img-fluid float-right">
+                <p class="h6">威秀雙人電影票</p>
+              </div>
+              <div class="col-4 text-center text-darkBlue d-block d-md-none">
+                <p class="h6">陸獎<small> 500 名</small></p>
+                <img src="img/item_line.png" alt="grand prize switch" class="img-fluid float-right">
+                <p class="h6">LinePoints 15 點</p>
               </div>
             </div>
           </div>
@@ -253,10 +294,11 @@ body {
   <!-- about us -->
   <div class="container-fluid bg-softRed" id="aboutUS">
     <div class="row justify-content-center wrapperL">
-      <div class="col-10 my-3">
-        <p class="display-4 font-weight-bold text-darkBlue">關於我們</p>
+      <div class="col-10 my-md-3">
+        <p class="display-4 font-weight-bold text-darkBlue d-none d-md-block">關於我們</p>
+        <p class="h1 font-weight-bold text-darkBlue d-block d-md-none">關於我們</p>
       </div>
-      <div class="col-10">
+      <div class="col-10 my-3">
         <div class="row justify-content-center">
           <div class="col-12 col-md-5">
             <div class="row">
@@ -265,12 +307,11 @@ body {
               </div>
             </div>
             <p class="h6 lineHeight text-darkBlue">
-              成立於 2003 年，獨家建置 ARO 網路收視率服務及品牌，<a href="https://www.ixresearch.com" target="_blank" class="linkTextDarkBlue">創市際市場研究顧問股份有限公司 InsightXplorer Ltd. </a>為台灣唯一數位量測之第三公正單位，擁有 IX Survey 網路調查系統及 <a href="https://www.ixpanel.com/index.jsp" target="_blank" class="linkTextDarkBlue">iX:Panel 問卷社群網站（原 CyberPanel）</a>消費者社群，成為台灣專業網路調查先驅。2006 年執行台灣網路基礎追蹤調查至今，長期關注台灣上網行為趨勢變化。2011 年因應全球化的風潮，獨家代理全球性品牌 <a href="https://www.comscore.com" target="
+              成立於 2003 年，獨家建置 ARO 網路收視率服務及品牌，<a href="https://www.ixresearch.com" target="_blank" class="linkTextDarkBlue">創市際市場研究顧問股份有限公司 InsightXplorer Ltd. </a>為台灣唯一數位量測之第三公正單位，擁有 IX Survey 網路調查系統及 <a href="https://www.ixpanel.com/index.jsp" target="_blank" class="linkTextDarkBlue">iX:Panel 問卷社群網站（原 CyberPanel</a>消費者社群，成為台灣專業網路調查先驅。2006 年執行台灣網路基礎追蹤調查至今，長期關注台灣上網行為趨勢變化。2011 年因應全球化的風潮，獨家代理全球性品牌 <a href="https://www.comscore.com" target="
               "  class="linkTextDarkBlue">Comscore</a> 網路量測服務及產品，導入國際觀點的數位測量服務。客戶群涵蓋全球知名品牌，網站媒體及代理商，如 Oath (Yahoo) 、Google、Facebook、蘋果日報、城邦出版、電通安吉斯集團、群邑等。2012 更成立創媒體 BeamMedia 以視覺詮釋數據，讓數據更貼近消費大眾，多元發展隨時為行銷市場提供最新的研究視角！
             </p>
           </div>
           <div class="d-none d-md-block col-md-2">
-
           </div>
           <div class="col-12 col-md-5">
             <div class="row">
@@ -279,7 +320,7 @@ body {
               </div>
             </div>
             <p class="h6 lineHeight text-darkBlue">
-              <a href="https://www.ixpanel.com/index.jsp" target="_blank" class="linkTextDarkBlue">iX:Panel 問卷社群網站（原 CyberPanel）</a>係由<a href="https://www.ixresearch.com" target="_blank" class="linkTextDarkBlue">創市際市場研究顧問股份有限公司 InsightXplorer Ltd. </a>所建置的大型台灣消費者情報平台，自 2003 年建立至今已逾 30 萬人規模。讓人們經由各式問卷調查，訪談活動及快速任務，將台灣消費者意見回饋給全球知名企業廠商，其第三單位公正性已成為全球最具指標性台灣消費者意見社群！無論你是上班族、學生、主婦或各行各業人士，我們都歡迎你的加入來提供更多元的聲音！
+              <a href="https://www.ixpanel.com/index.jsp" target="_blank" class="linkTextDarkBlue">iX:Panel 問卷社群網站（原 CyberPanel</a>係由<a href="https://www.ixresearch.com" target="_blank" class="linkTextDarkBlue">創市際市場研究顧問股份有限公司 InsightXplorer Ltd. </a>所建置的大型台灣消費者情報平台，自 2003 年建立至今已逾 30 萬人規模。讓人們經由各式問卷調查，訪談活動及快速任務，將台灣消費者意見回饋給全球知名企業廠商，其第三單位公正性已成為全球最具指標性台灣消費者意見社群！無論你是上班族、學生、主婦或各行各業人士，我們都歡迎你的加入來提供更多元的聲音！
             </p>
           </div>
         </div>
@@ -292,30 +333,31 @@ body {
   <!-- regulations -->
   <div class="container-fluid bg-darkBlue text-white" id="regulations">
     <div class="row justify-content-center wrapperL">
-      <div class="col-10">
-        <p class="display-4 font-weight-bold">活動細則與獎項說明</p>
+      <div class="col-10 my-md-3">
+        <p class="display-4 font-weight-bold d-none d-md-block">活動細則</p>
+        <p class="h1 font-weight-bold d-block d-md-none">活動細則</p>
       </div>
       <div class="col-10">
         <ol class="lineHeight small">
-          <li>
+          <li class="li-to-left">
             本活動僅限居住於台灣、金門、澎湖、馬祖地區之居民參加，獎品寄送地區僅限於台灣、金門、澎湖、馬祖地區。
           </li>
-          <li>
+          <li class="li-to-left">
             中獎者如因資料填寫不完整、不清楚或寄送過程中發生不可歸責於主辦方之原因，導致中獎憑證遺失或無法辨識，將視同放棄獲獎資格，主辦單位不負任何法律責任，參加者亦不得因此異議。
           </li>
-          <li>
+          <li class="li-to-left">
             本活動如有任何因電腦、網路、電話、技術或不可歸責於主辦單位之事由，而使系統服務終止、中斷、誤送活動訊息或中獎通知，或使參加人所寄出或登錄之資料有遲延、遺失、錯誤、無法辨識或毀損之情況，主辦單位不負任何法律責任，參加者亦不得因此異議。
           </li>
-          <li>
-            參加者於送出資料參加本活動時，視為同意並接受本活動所有內容及細則之規範（含其更新修正內容），主辦方有權檢視本活動參與者之參與行為及中獎情形是否涉嫌不法或有違常理之異常狀況，例：人為操作蓄意偽造、短時間異常多筆參與行為、透過任何電腦程式參與活動、詐欺或以任何其他不正當的方式意圖以進行不實或虛偽活動參與行為、或登錄資料不實或不正確或盜用任何第三人之資料，或有違反活動規範之行為。
+          <li class="li-to-left">
+            參加者於送出資料參加本活動時，視為同意並接受本活動所有內容及細則之規範（含其更新修正內容，主辦方有權檢視本活動參與者之參與行為及中獎情形是否涉嫌不法或有違常理之異常狀況，例：人為操作蓄意偽造、短時間異常多筆參與行為、透過任何電腦程式參與活動、詐欺或以任何其他不正當的方式意圖以進行不實或虛偽活動參與行為、或登錄資料不實或不正確或盜用任何第三人之資料，或有違反活動規範之行為。
           </li>
-          <li>
+          <li class="li-to-left">
             活動參與者因上述情形所獲得之活動資格及獎品，主辦方及活動小組保有變更、終止其參加活動資格、取消中獎資格或暫停活動的權利，並對於任何破壞本活動之行為保留法律追訴權，並就因此產生之損害，得向參加者請求賠償。
           </li>
-          <li>
-            中獎者若非中華民國國境內設籍之國人（即依法於課稅年度內，在中華民國境內居住未達183天之本國人含大陸人士及外國人），不論中獎者所得獎項之價值，需預先扣繳 20% 機會中獎稅金。財政部臺北國稅局實施「憑單無紙化」，自 2015 年起所得稅各式憑單符合一定情形者，憑單填發單位如期向國稅局辦理憑單申報後，原則上免寄發憑單給納稅義務人。中獎者需於 2019 年 5 月底前完成申報，中獎者若不願意配合，則視為自動棄權，不具得獎資格。此外中獎價值累計超過 NT$1,001 而未滿 20 歲之中獎者，視同父母或監護人中獎，由父母或監護人代為領獎，並請附上中獎者及其代領人關係證明影本。
+          <li class="li-to-left">
+            中獎者若非中華民國國境內設籍之國人（即依法於課稅年度內，在中華民國境內居住未達183天之本國人含大陸人士及外國人，不論中獎者所得獎項之價值，需預先扣繳 20% 機會中獎稅金。財政部臺北國稅局實施「憑單無紙化」，自 2015 年起所得稅各式憑單符合一定情形者，憑單填發單位如期向國稅局辦理憑單申報後，原則上免寄發憑單給納稅義務人。中獎者需於 2019 年 5 月底前完成申報，中獎者若不願意配合，則視為自動棄權，不具得獎資格。此外中獎價值累計超過 NT$1,001 而未滿 20 歲之中獎者，視同父母或監護人中獎，由父母或監護人代為領獎，並請附上中獎者及其代領人關係證明影本。
           </li>
-          <li>
+          <li class="li-to-left">
             本活動如有未盡事宜，創市際市場研究顧問股份有限公司擁有保留、修改、暫停及解釋活動內容之權利，修改訊息將於本活動網站、iX:Panel Facebook 粉絲頁、iX:Panel 問卷網站上公布，不另行通知。
           </li>
         </ol>

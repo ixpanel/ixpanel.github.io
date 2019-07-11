@@ -12,7 +12,11 @@ html {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
-  }
+}
+
+.li-to-left {
+  margin-left: -1.5rem;
+}
 
 /* Lineup of Wrappers */
 .wrapper {
@@ -34,11 +38,6 @@ html {
 .wrapperXXL{
   padding-top: 40vh;
   /*padding-bottom: 8em;*/
-}
-
-/* position */
-.moveUp {
-  margin-top: -20vh;
 }
 
 /* typography */
@@ -116,6 +115,14 @@ hr.orange {
 .overlay {
   position: fixed;
   top: 68vh;
+  right: 0;
+  bottom: 0;
+  z-index: 1050;
+}
+
+.overlayM {
+  position: fixed;
+  top: 45vh;
   right: 0;
   bottom: 0;
   z-index: 1050;
