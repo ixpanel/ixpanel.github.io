@@ -2,11 +2,11 @@
 <html lang="zh-Hant-TW">
 <head>
   <!-- Google Tag Manager -->
-  <script>（function（w,d,s,l,i){w[l]=w[l]||[];w[l].push（{'gtm.start':
-  new Date（).getTime（),event:'gtm.js'});var f=d.getElementsByTagName（s)[0],
-  j=d.createElement（s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore（j,f);
-  })（window,document,'script','dataLayer','GTM-M65KWKC');</script>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KKZSQV4');</script>
   <!-- End Google Tag Manager -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +18,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
-  <title>世代生態系活動登錄 - 會員註冊</title>
+  <title>世代生態系活動登錄 - 加入 iX:Panel 會員</title>
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta property="og:url" content="http://www.beamedia.co/project/the-found-object-office/index.html">
@@ -43,51 +43,23 @@ body {
 
 </style>
 
-<!-- scrolling -->
-<script>
-    $（document).ready（function （) {
-        // Add smooth scrolling to all links
-        $（"a").on（'click', function （event) {
-            // Make sure this.hash has a value before overriding default behavior
-            if （this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault（);
-                // Store hash
-                var hash = this.hash;
-                // Using jQuery's animate（) method to add smooth page scroll
-                // The optional number （800) specifies the number of milliseconds it takes to scroll to the specified area
-                $（'html, body').animate（{
-                    scrollTop: $（hash).offset（).top
-                }, 800, function （) {
-                    // Add hash （#) to URL when done scrolling （default click behavior)
-                    window.location.hash = hash;
-                });
-            } // End if
-        });
-    });
-</script>
-<script type="text/javascript">
-  document.addEventListener（"touchstart", function（) {}, true);
-</script>
-<!-- end of scrolling -->
+<body class="bg-paleCyan text-darkBlue">
 
-<body>
-
-  <!-- Google Tag Manager （noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M65KWKC"
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KKZSQV4"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager （noscript) -->
+  <!-- End Google Tag Manager (noscript) -->
 
 
-<!-- nav -->
-<nav class="navbar navbar-light bg-white">
-  <a class="navbar-brand" href="#">
-    <img src="img/iXPanel_Logo_noTop.svg" class="my-2 pl-3" width="auto" height="25" alt="">
-  </a>
-</nav>
-<!-- end of nav -->
+  <!-- nav -->
+  <nav class="navbar navbar-dark bg-darkBlue">
+    <a class="navbar-brand" href="#">
+      <img src="img/logoType.png" class="my-2 pl-3" width="auto" height="50" alt="">
+    </a>
+  </nav>
+  <!-- end of nav -->
 
-<div class="container-fluid bg-light" style="height:85vh;">
+<div class="container-fluid" style="height:85vh;">
   <div class="row justify-content-center">
     <div class="col-10 col-md-5 my-3">
       <div class="">
@@ -102,7 +74,7 @@ body {
         </div>
         <form class="mx-4 my-3">
           <div class="text-center">
-            <button type="submit" class="btn btn-secondary">Facebook 註冊</button>
+            <button type="submit" class="btn btn-warning text-darkBlue">Facebook 註冊</button>
           </div>
           <div class="row justify-content-center">
             <div class="col">
@@ -124,15 +96,16 @@ body {
             <!--label for="exampleInputPassword1">Password</label-->
             <input type="password" class="form-control" id="InputPassword" placeholder="密碼：英數 6-12 字">
           </div>
-          <div class="text-center my-5">
+          <div class="text-center my-4">
             <p class="text-muted small">按下註冊表示您已同意 iX:Panel 的 <a data-toggle="modal" data-target="#privacy" href="#privacy">服務條款及資料使用政策</a>。</p>
-            <button type="submit" class="btn btn-secondary">註冊</button>
+            <button type="submit" class="btn btn-warning text-darkBlue">註冊</button>
             <p class="text-muted small my-3">已經是會員嗎？ <a href="login.html">立刻登入</a>。</p>
 
         </form>
       </div>
     </div>
   </div>
+  <div class="w-100 my-5"></div>
 
 
 
@@ -142,105 +115,108 @@ body {
 <!-- privacy modal -->
 <div class="modal fade" id="privacy" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-lg my-5" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">iX:Panel 隱私權聲明</h5>
+    <div class="modal-content bg-darkBlue">
+      <div class="modal-header ">
+        <h5 class="modal-title text-white">iX:Panel 隱私權聲明</h5>
 
-        <button type="button" class="close" data-dismiss="modal" aria-lable="Close">
+        <button type="button" class="close text-white" data-dismiss="modal" aria-lable="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        <div class="container-fluid">
+      <div class="modal-body bg-paleCyan">
+        <div class="container-fluid my-3">
           <div class="row justify-content-center">
-            <p class="">
-              iX:Panel 網站服務 （www.ixpanel.com） （以下簡稱「iX:Panel」）係由創市際市場研究顧問股份有限公司（以下簡稱「本公司」）所架設經營提供。本公司將會定期的檢視「iX:Panel」的隱私政策與安全機制，並適時的改進與加強。
-            </p>
-            <p class="">
-              為保障您的個人資料安全性，故依個人資料保護法擬定「隱私權政策」聲明，讓您瞭解本公司如何蒐集、應用、保護您所提供的個人資訊。為了確保會員個人資料及權益，建議您詳細閱讀以下條款：（本隱私權政策之保護範圍，不及於本公司所不擁有或無法控制之其它公司，亦不及於非本公司所雇用或管理之人員。）
-            </p>
-            <p class="">
-              創市際為臺灣地區的公正專業研究調查機構，為歐洲 ESOMAR 組織會員，依據 ESOMAR 的規範提供 100% 保密性。
-            </p>
+            <div class="col-11">
+              <p class="">
+                iX:Panel 網站服務 （www.ixpanel.com） （以下簡稱「iX:Panel」）係由創市際市場研究顧問股份有限公司（以下簡稱「本公司」）所架設經營提供。本公司將會定期的檢視「iX:Panel」的隱私政策與安全機制，並適時的改進與加強。
+              </p>
+              <p class="">
+                為保障您的個人資料安全性，故依個人資料保護法擬定「隱私權政策」聲明，讓您瞭解本公司如何蒐集、應用、保護您所提供的個人資訊。為了確保會員個人資料及權益，建議您詳細閱讀以下條款：（本隱私權政策之保護範圍，不及於本公司所不擁有或無法控制之其它公司，亦不及於非本公司所雇用或管理之人員。）
+              </p>
+              <p class="">
+                創市際為臺灣地區的公正專業研究調查機構，為歐洲 ESOMAR 組織會員，依據 ESOMAR 的規範提供 100% 保密性。
+              </p>
+            </div>
           </div>
           <div class="row justify-content-center">
-            <ul class="list-unstyled lineHeight">
-              <li class="h4">
-                個人資料之取得
-                <ol class="h6 my-3 lineHeight">
-                  <li>
-                    當您註冊成為 IXPanel 會員時，IXPanel 會請您提供您的有效電子信箱位址，此為行使服務必要之資料。
-                  </li>
-                  <li>
-                    當您成為 IXPanel 會員，或您需要將IXPanel獎勵點數兌換成現金或禮券時，IXPanel 會請您提供您的個人資料及匯款帳戶資訊，此為行使服務必要之資料。
-                  </li>
-                  <li>
-                    您必須確保您所提供的個人資料的正確性。若個人資料有所異動，您必須進入帳戶設定更新您的資料，或聯繫 IXPanel 為您作更新，以利 IXPanel 匯款或寄送禮品給您。
-                  </li>
-                  <li>
-                    每位會員都有 100 個成功推薦名額，超過者以 100 名為推薦點數發送上限。
-                  </li>
-                </ol>
-              </li>
-              <li class="h4">
-                個人資料收集及運用
-                <ol class="h6 my-3 lineHeight">
-                  <li>
-                    您註冊會員時所提供的電子信箱，IXPanel 僅用於會員認證或通知 IXPanel 相關服務訊息，IXPanel 絕不會發送垃圾郵件。
-                  </li>
-                  <li>
-                    您在 IXPanel 提供的個人資料與帳戶資訊，僅供 IXPanel 進行身分驗證、現金匯款或研究分析等內部作業之使用。除依法令規定或主管機關之要求，絕不會洩漏給任何第三方。
-                  </li>
-                  <li>
-                    本公司除下列情形，並不會公開有關 IXPanel 網站會員之任何相關資料：
-                    <ul>
-                      <li>
-                        會員本人之同意
-                      </li>
-                      <li>
-                        法院傳票或其它政府專責單位之行為
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    本公司將於會員參與本網站相關研究調查活動時，收集您的個人資料及所提供之調查資料，並會持續追蹤，以便通知您參與適合您的任何研究調查，本公司將針對您所了解的任何產品與服務徵詢您寶貴的意見。IXPanel網站會員個人資料僅被使用於需要與您個人聯繫及研究專案分析時之用，未經同意將不會公開或提供給任何與研究計畫無關之第三人或團體。
-                  </li>
-                </ol>
-              </li>
-              <li class="h4">
-                終止服務與資料刪除
-                <ul class="h6 my-3 lineHeight">
-                  <li>
-                    依據個人資料保護法，您有權終止IXPanel對您行使資料蒐集之權利。並有權利要求刪除您在IXPanel的一切個人資料。但當您提出要求後，您在IXPanel所享有的服務將會受到限制，甚至導致您無法繼續透過IXPanel獲得獎勵回饋。
-                  </li>
-                </ul>
-              </li>
-              <li class="h4">
-                Cookies 之運用
-                <ul class="h6 my-3 lineHeight">
-                  <li>
-                    Cookies 是您在瀏覽網站時，網站傳送給瀏覽器的一小段文字，可讓網站儲存您的瀏覽資訊，如在您註冊、登入、瀏覽網頁、點擊問卷時，IXPanel採用信任第三方 Cookie 技術存取不具實際身分識別的行為資訊，藉此讓我們能依照您的興趣與喜好，自訂更優質的使用體驗，或是方便您輕鬆登入並使用我們的服務。請注意若您停用電腦上的 Cookie，IXPanel皆會因無法追蹤，導致相關個人化自訂功能失效。本公司及其信任之合作夥伴有權利使用這些不具個人資訊的資料，用於包括但不限於改善使用者體驗或統計分析之用途。
-                  </li>
-                </ul>
-              </li>
-              <li class="h4">
-                安全機制
-                <ul class="h6 my-3 lineHeight">
-                  <li>
-                    本網站擁有專業多重之網路安全機制，防止本公司所掌控的研究及相關資訊流失、錯誤使用或竄改。
-                  </li>
-                </ul>
-              </li>
-              <li class="h4">
-                其他
-                <ul class="h6 my-3 lineHeight">
-                  <li>
-                    如您對本公司的隱私權陳述、本網站之使用或其他相關問題有任何的看法與建議，請聯繫 service@ixpanel.com。 IXPanel保留修改此份隱私權政策的權益，若有修改將會更新本網頁內容，不另行告知。
-                  </li>
-                </ul>
-              </li>
-            </ul>
-
+            <div class="col-11">
+              <ul class="list-unstyled lineHeight">
+                <li class="h4">
+                  個人資料之取得
+                  <ol class="h6 my-3 lineHeight">
+                    <li>
+                      當您註冊成為 IXPanel 會員時，IXPanel 會請您提供您的有效電子信箱位址，此為行使服務必要之資料。
+                    </li>
+                    <li>
+                      當您成為 IXPanel 會員，或您需要將IXPanel獎勵點數兌換成現金或禮券時，IXPanel 會請您提供您的個人資料及匯款帳戶資訊，此為行使服務必要之資料。
+                    </li>
+                    <li>
+                      您必須確保您所提供的個人資料的正確性。若個人資料有所異動，您必須進入帳戶設定更新您的資料，或聯繫 IXPanel 為您作更新，以利 IXPanel 匯款或寄送禮品給您。
+                    </li>
+                    <li>
+                      每位會員都有 100 個成功推薦名額，超過者以 100 名為推薦點數發送上限。
+                    </li>
+                  </ol>
+                </li>
+                <li class="h4">
+                  個人資料收集及運用
+                  <ol class="h6 my-3 lineHeight">
+                    <li>
+                      您註冊會員時所提供的電子信箱，IXPanel 僅用於會員認證或通知 IXPanel 相關服務訊息，IXPanel 絕不會發送垃圾郵件。
+                    </li>
+                    <li>
+                      您在 IXPanel 提供的個人資料與帳戶資訊，僅供 IXPanel 進行身分驗證、現金匯款或研究分析等內部作業之使用。除依法令規定或主管機關之要求，絕不會洩漏給任何第三方。
+                    </li>
+                    <li>
+                      本公司除下列情形，並不會公開有關 IXPanel 網站會員之任何相關資料：
+                      <ul>
+                        <li>
+                          會員本人之同意
+                        </li>
+                        <li>
+                          法院傳票或其它政府專責單位之行為
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      本公司將於會員參與本網站相關研究調查活動時，收集您的個人資料及所提供之調查資料，並會持續追蹤，以便通知您參與適合您的任何研究調查，本公司將針對您所了解的任何產品與服務徵詢您寶貴的意見。IXPanel網站會員個人資料僅被使用於需要與您個人聯繫及研究專案分析時之用，未經同意將不會公開或提供給任何與研究計畫無關之第三人或團體。
+                    </li>
+                  </ol>
+                </li>
+                <li class="h4">
+                  終止服務與資料刪除
+                  <ul class="h6 my-3 lineHeight">
+                    <li>
+                      依據個人資料保護法，您有權終止IXPanel對您行使資料蒐集之權利。並有權利要求刪除您在IXPanel的一切個人資料。但當您提出要求後，您在IXPanel所享有的服務將會受到限制，甚至導致您無法繼續透過IXPanel獲得獎勵回饋。
+                    </li>
+                  </ul>
+                </li>
+                <li class="h4">
+                  Cookies 之運用
+                  <ul class="h6 my-3 lineHeight">
+                    <li>
+                      Cookies 是您在瀏覽網站時，網站傳送給瀏覽器的一小段文字，可讓網站儲存您的瀏覽資訊，如在您註冊、登入、瀏覽網頁、點擊問卷時，IXPanel採用信任第三方 Cookie 技術存取不具實際身分識別的行為資訊，藉此讓我們能依照您的興趣與喜好，自訂更優質的使用體驗，或是方便您輕鬆登入並使用我們的服務。請注意若您停用電腦上的 Cookie，IXPanel皆會因無法追蹤，導致相關個人化自訂功能失效。本公司及其信任之合作夥伴有權利使用這些不具個人資訊的資料，用於包括但不限於改善使用者體驗或統計分析之用途。
+                    </li>
+                  </ul>
+                </li>
+                <li class="h4">
+                  安全機制
+                  <ul class="h6 my-3 lineHeight">
+                    <li>
+                      本網站擁有專業多重之網路安全機制，防止本公司所掌控的研究及相關資訊流失、錯誤使用或竄改。
+                    </li>
+                  </ul>
+                </li>
+                <li class="h4">
+                  其他
+                  <ul class="h6 my-3 lineHeight">
+                    <li>
+                      如您對本公司的隱私權陳述、本網站之使用或其他相關問題有任何的看法與建議，請聯繫 service@ixpanel.com。 IXPanel保留修改此份隱私權政策的權益，若有修改將會更新本網頁內容，不另行告知。
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -253,11 +229,14 @@ body {
 
 
 <!--- Footer --->
-<footer class="footer mt-auto py-3 text-center small bg-white">
-  <div class="container">
-    <span class="text-muted">Copyright © 2019 創市際市場研究顧問 InsightXplorer Ltd.</span>
-  </div>
-</footer>
+<div class="py-4 bg-dark">
+  <p class="h6 text-center small text-white">
+    Copyright © 2019 創市際市場研究顧問公司 InsightXplorer Ltd.
+  </p>
+  <p class="h6 text-center small text-white">
+    客服信箱 support@ixpanel.com
+  </p>
+</div>
 <!--- end of Footer --->
 
 </body>
