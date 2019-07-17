@@ -37,12 +37,9 @@ html {
 }
 
 /* typography */
-
 .lineHeight {
   line-height: 1.5;
 }
-
-
 .linkTextDeco {
   color:white;
   cursor: pointer;
@@ -67,13 +64,33 @@ html {
   color:#8D2143;
   cursor: pointer;
 }
+.btn-rounded {
+  border-radius: 100px;
+}
 
+.text-hardRed {
+  color: #e84c31;
+}
 
 /* layout */
 .bg-softRed {
   background-color: #f0b0b2;
 }
-
+.bg-pink {
+  background-color: #fff8f7;
+}
+.bg-hardRed {
+  background-color: #EA4225;
+}
+.bg-darkGreen {
+  background-color: #006F5E;
+}
+.bg-darkBlue {
+  background-color: #30587C;
+}
+.bg-yellow {
+  background-color: #EEA21B;
+}
 
 
 /* responsive */
