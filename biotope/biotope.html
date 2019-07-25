@@ -117,11 +117,17 @@ body {
         <a class="nav-link text-white" href="#aboutUS">關於我們</a>
       </li>
       <li class="nav-item text-center">
-        <a class="nav-link text-white" href="#regulations">活動細則</a>
+        <a class="nav-link text-white mr-md-3" href="#regulations">活動細則</a>
       </li>
-      <!--li class="nav-item text-center">
-        <a class="nav-link text-white" data-toggle="" href="#">分享出去</a>
-      </li-->
+      <li class="nav-item text-center">
+        <a class="nav-link text-white fb-xfbml-parse-ignore" onclick="ga('send', 'social', 'share btn', 'click', 'FBshare');" href="http://www.facebook.com/sharer.php?u=https://www.ixpanel.com/activity/2019/aug/generations.jsp?utm_source=FBshareBtn&utm_medium=FB" target="_blank"><i class="fab fa-facebook-square fa-lg text-white"></i></a>
+      </li>
+      <li class="nav-item text-center">
+        <a class="nav-link text-white" onclick="ga('send', 'social', 'share btn', 'click', 'LINEshare');" href="https://social-plugins.line.me/lineit/share?url=https://www.ixpanel.com/activity/2019/aug/generations.jsp?utm_source=LINEshareBtn&utm_medium=line" target="_blank"><i class="fab fa-line fa-lg text-white"></i></a>
+      </li>
+      <li class="nav-item text-center">
+        <a class="nav-link text-white" href="https://twitter.com/intent/tweet?text=世代生態系&nbsp;http%3A%2F%2Fhttps://www.ixpanel.com/activity/2019/aug/generations.jsp" target="_blank"><i class="fab fa-twitter-square fa-lg text-white"></i></a>
+      </li>
     </ul>
   </div>
 </nav>
@@ -183,36 +189,6 @@ body {
 
   <!-- end of hero -->
 
-  <!-- share modal -->
-  <div class="modal fade" id="share" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-lg my-5" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-lable="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="container-fluid">
-            <div class="row justify-content-center">
-              <div class="my-5 mx-auto">
-                <a role="button" class="btn btn-lg  bg-primary px-2 mx-2 fb-xfbml-parse-ignore" onclick="ga('send', 'social', 'share btn', 'click', 'FBshare');" href="http://www.facebook.com/sharer.php?u=http://www.beamedia.co/project/the-found-object-office/index.html" target="_blank" style="width: 100px; height:100px">
-                  <i class="fab fa-facebook-f fa-4x text-white"></i>
-                </a>
-                <a role="button" class="btn btn-lg bg-success px-2 mx-2" onclick="ga('send', 'social', 'share btn', 'click', 'LINEshare');" href="https://social-plugins.line.me/lineit/share?url=http://www.beamedia.co/project/the-found-object-office/index.html?utm_source=LINEshareBtn&utm_medium=line" target="_blank" style="width: 100px; height:100px">
-                  <i class="fab fa-line fa-4x text-white"></i>
-                </a>
-                <a role="button" class="btn btn-lg bg-info px-2 mx-2" href="https://twitter.com/intent/tweet?text=每個時代都有屬於自己的物件與記憶，歡迎光臨時物招領&nbsp;http%3A%2F%2Fwww.beamedia.co%2Fproject%2Fthe-found-object-office%2Findex.html" target="_blank" style="width: 100px; height:100px">
-                  <i class="fab fa-twitter fa-4x text-white"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end of share modal -->
 
   <!-- rewards -->
   <div class="container-fluid bg-grayishBlue wrapper" id="rewards">
@@ -327,7 +303,7 @@ body {
                 <p class="h4 ">LINE Points 15 點</p>
               </div>
               <!-- end of desktop rewards -->
-              
+
               <!-- mobile rewards -->
               <div class="col-4 text-center text-darkBlue d-block d-md-none">
                 <p class="h6">肆獎<small> 2 名</small></p>
