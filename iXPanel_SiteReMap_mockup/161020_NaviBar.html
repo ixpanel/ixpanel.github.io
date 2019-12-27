@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>NaviBar</title>
+<style>
+#logo {
+	position:relative; 
+	left:41px; top:-62px;
+	width:1280px;
+}
+ul {
+    list-style-type: none;
+    margin: 10px 0px;
+	padding:0;
+    overflow: hidden;
+    background-color: #f8fff9;
+	border-bottom:2px solid #a3d15a;
+	border-top:2px solid #a3d15a;
+	font-family: sans-serif;
+	font-size:16px;
+	font-weight:normal;
+}
+li {
+    float: right;
+}
+li a, .dropbtn {
+    display: block;
+    color: #878985;
+    text-align: center;
+    padding: 25px 30px;
+    text-decoration: none;
+}
+li.dropdown {
+	display:inline-block;
+}
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #a3d15a;
+    color: white;
+}
+.dropdown-content {
+	display:none;
+	position:absolute;
+	background-color:#cfe874;
+	min-width:inherit;
+	box-shadow:2px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.dropdown-content a {
+	color:#878985;
+	padding: 15px 33px;
+	text-decoration:none;
+	display:block;
+	text-align:center;
+	font-size:14px;
+}
+.dropdown-content a:hover {
+	background-color:inherit;
+	color:#a3d15a;
+}
+.dropdown:hover .dropdown-content {
+	display:block;
+	background-color:white;
+	border:1px solid #cfe874
+}
+a.name {
+	font-size:14px;
+	font-weight:bold;
+	text-align:right;
+	font-family: sans-serif;
+	color:#bfbfbf;
+	padding:0px 10px;
+}
+a.logout {
+	font-size:14px;
+	font-weight:bold;
+	text-align:right;
+	font-family: sans-serif;
+	color:#bfbfbf;
+}
+a.logout:hover {
+	color:#333;
+	font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+<div style="text-align:right">
+<a class="name">不動明王</a><a class="logout" href="logout">登出</a>
+</div>
+<div class="Navi">
+    <ul>
+      <li class="dropdown">
+          <a href="#invitation" class="dropbtn">邀請朋友</a>
+          <div class="dropdown-content">
+        	<a href="#">立即邀請</a>
+        	<a href="#">邀請紀錄</a>
+          </div>
+      </li>
+      <li class="dropdown">
+      	<a href="#account" class="dropbtn">帳戶管理</a>
+        <div class="dropdown-content">
+        	<a href="#">會員資料</a>
+        	<a href="#">兌換資料</a>
+        	<a href="#">變更密碼</a>
+        	<a href="#">聯繫客服</a>
+        </div>
+      </li>
+      <li class="dropdown">
+          <a href="#CheckOut" class="dropbtn">兌換獎勵</a>
+          <div class="dropdown-content">
+          	<a href="#">立即兌換</a>
+          	<a href="#">兌換紀錄</a>
+          </div>
+      </li>
+      <li><a href="#record">參與紀錄</a></li>
+      <li><a href="#latestQ">最新調查</a></li>
+    </ul>
+    <div id="logo">
+        <a href="http://ixpanel.com"><img src="img/iXPanel_Logo.svg" /></a>
+      </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>161020Lightbox_Login</title>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Nunito:700);
+
+body {
+	font-family: sans-serif;
+}
+a:link {
+    color:inherit;
+	text-decoration: none;
+}
+a:visited {
+    color:inherit;
+}
+a:hover {
+	color:#ff691b;
+}
+.black_overlay{
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index:0;
+	-moz-opacity: 0.5;
+	opacity:.60;
+	filter: alpha(opacity=80);
+}
+.white_content {
+	display: none;
+	position: relative;
+	top: 50px;
+	margin-right:auto;
+	margin-left:auto;
+	width: 480px;
+	height: 100%;
+	border: none;
+	border-radius:15px;
+	background-color: #f8fff9;
+}
+.LB_wrapper {
+	width:100%;
+}
+.LB_Logo {
+	text-align:center;
+	color:#a3d15a;
+	font-size:13px;
+	letter-spacing:2px;
+	line-height:1.5;
+	padding-top:2em;
+}
+.LB_FBlogin {
+}
+.LB_login{
+}
+.LB_captcha {
+	display:inline-block;
+	font-size:10px;
+	font-weight:normal;
+	color:#ffb24d;
+	margin-bottom:20px;
+	margin-left:37%;
+}
+.form-style{
+	font-family: 'Nunito', sans-serif;
+	margin-top:10px;
+}
+.form-style ul{
+    list-style:none;
+}
+.form-style ul li{
+    list-style:none;
+}
+.form-style ul li  .field-style{
+	margin:5px 72px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 245px;
+	padding: 10px;
+    outline: none;
+    border: 1px solid #878985;
+	border-radius: 5px;
+	font-size:12px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+.form-style ul li  .field-style:focus{
+    border:1px solid #a3d15a;
+}
+.form-style ul li input[type="button"],
+.form-style ul li input[class="submit1"]
+{
+	margin:0px 70px;
+	height:37px;
+	width: 250px;
+    background-color: #f8fff9;
+    border: 3px solid #a3d15a;
+	border-radius:20px;
+    cursor: pointer;
+    color: #a3d15a;
+    text-decoration: none;
+	font-size:14px;
+	font-weight:700;
+}
+.form-style ul li input[type="button"]:hover,
+.form-style ul li input[class="submit1"]:hover {
+    background-color: #a3d15a;
+	color:#fff;
+}
+
+.form-style ul li input[type="button"],
+.form-style ul li input[class="submit2"]
+{
+	margin:10px 70px;
+	height:37px;
+	width: 250px;
+    background-color: #f8fff9;
+    border: 3px solid #2f7caf;
+	border-radius:20px;
+    cursor: pointer;
+    color: #2f7caf;
+    text-decoration: none;
+	font-size:14px;
+	font-weight:700;
+}
+.form-style ul li input[type="button"]:hover,
+.form-style ul li input[class="submit2"]:hover {
+    background-color: #2f7caf;
+	color:#fff;
+}
+label, input {
+    display: inline-block;
+}
+#or {
+	text-align:center;
+	position:absolute;
+	top:13.6em;
+	left:45%;
+	padding:5px;
+	color:#bfbfbf;
+	background-color:#f8fff9;
+	font-weight:normal;
+	font-size:12px;
+}
+.LB_gender {
+	color:#878985;
+	font-size:14px;
+	font-weight:normal;
+	margin-bottom:10px;
+	margin-top:10px;
+	margin-left:16%;
+}
+#memberalready {
+	text-align:center;
+	font-size:12px;
+	color:#878985;
+	margin-bottom:2em;
+	letter-spacing:2px;
+}
+#welcome {
+	display:block;
+	text-align:center;
+	font-size:12px;
+	color:#9d9e9d;
+	margin-top:30px;
+	line-height:1.2;
+}
+#welcome a {
+	color:#ffb24d;
+}
+#note {
+	font-size:10px;
+	font-weight:normal;
+	text-align:center;
+	display:block;
+	margin-top:30px;
+	margin-bottom:30px;
+	color:#878985;
+	letter-spacing:2px;
+}
+#note a {
+	color:#a3d15a;
+}
+#note a:hover {
+	color:#ff691b;
+}
+#warning {
+	font-size:10px;
+	font-weight:normal;
+	text-align:left;
+	color:#878985;
+	line-height:1.5;
+	padding:0px 115px 5px 70px;
+	letter-spacing:1px;
+}
+#warning a {
+	color:#a3d15a;
+}
+#warning a:hover {
+	color:#ff691b;
+}
+
+span {
+	display:block;
+	margin-bottom: 20px;
+	margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+<div id="fade" class="black_overlay"></div>
+<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">加入會員</a>
+<div id="light" class="white_content">
+    <div class="LB_wrapper">
+        <div class="LB_Logo">
+            <img src="img/iXPanel_Logo.svg">
+            <div>即刻開始分享自己的日常觀點</div>
+        </div>
+        <a href="https://dl.dropboxusercontent.com/u/158459036/iXPanel_SiteReMap_mockup/161019_iXPanelSiteReMap.html">
+        <div class="LB_FBlogin">
+        	<form class="form-style">
+            	<ul>
+                	<li>
+                    	<input type="submit" class="submit2" value="Facebook 註冊">
+                    </li>
+                </ul>
+            </form>
+        </div>
+        </a>
+    <div id="or">或</div>
+    <span><hr noshade align="center" color="#bfbfbf" size="1px" width="80%"></span>
+        <div class="LB_login">
+        	<form class="form-style">
+            <ul>
+                <li>
+										<input type="email" name="mail" class="field-style" placeholder="請輸入Email" required/>
+                    <input type="password" name="pass" class="field-style" placeholder="密碼英數混合6-12字" required/>
+                </li>
+            <div class="LB_gender">
+                <li>
+                    <input type="radio" name="gender" value="male" align="left"><label>男  </label>
+                    <input type="radio" name="gender" value="female" align="left"><label>女  </label>
+                </li>
+            </div>
+                <li>
+                    <input type="date" name="birthday" class="field-style" placeholder="生日（日/月/西元年）" />
+                    <input type="name" name="field3" class="field-style" placeholder="推薦人（可不填）" />
+                    <input type="text" name="captcha" class="field-style" placeholder="請輸入驗證碼" />
+                    <div class="LB_captcha" style="left:30px">
+                        看不清楚驗證碼嗎？請<a href="link"><b><u>按這裡</u></b></a>更新
+                    </div>
+
+                </li>
+                <div id="warning">
+                    按下註冊鈕的同時，表示您已詳細暸解 iXPanel 的<a href="http://www.ixpanel.com/privacy.jsp"> 服務條款及資料使用政策</a>。
+                </div>
+
+                <li>
+                    <input type="submit" class="submit1" value="註  冊" />
+                </li>
+            </ul>
+            </form>
+                <div id="memberalready">
+                	已經是會員了？
+                    <a href="https://dl.dropboxusercontent.com/u/158459036/iXPanel_SiteReMap_mockup/161020_Lighbox_Login.html"><b>立即登入</b></a>
+				</div>
+        </div>
+    </div>
+<div>
+</div>
+</body>
+</html>

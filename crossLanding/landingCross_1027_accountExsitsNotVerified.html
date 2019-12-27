@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>有帳號但未驗證</title>
+
+  <link rel="stylesheet" type="text/css" href="bulma/css/bulma.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="你的冒險屬性">
+  <meta property="og:image" content="https://c1.staticflickr.com/5/4479/37133204023_001e4c1192_o.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:description" content="因為你理解冒險的路上充滿各種未知與疑惑，我們亟需你的視野，來吧，和我們一起，把宇宙連起來！">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="favi/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favi/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favi/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favi/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favi/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favi/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favi/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favi/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favi/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favi/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favi/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favi/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favi/favicon-16x16.png">
+  <link rel="manifest" href="favi/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favi/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+<style>
+
+body {
+  background-image: url(img/BG-03.png);
+  background-repeat: no-repeat;
+  background-position: 0% 6%;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.wht {
+  background-color: white;
+}
+
+.grn {
+  background-color: #aacc03;
+}
+
+.hBorder {
+  border-color: #aacc03;
+  border-top-style: solid;
+  border-top-width: 10px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.paddown {
+  padding-top: 3%;
+}
+
+.paddownL {
+  padding-top: 10%;
+}
+
+.padwith {
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.footer {
+  background-color: #FFF;
+  padding: 2rem 1rem 4rem;
+}
+
+.button {
+  border-radius: 30px;
+  padding-left: 1.8em;
+  padding-right: 1.8em;
+  height: 3em;
+  font-size: 12px;
+}
+
+.cf img {
+  -webkit-transition: opacity 0s ease-in-out;
+  -moz-transition: opacity 0s ease-in-out;
+  -o-transition: opacity 0s ease-in-out;
+  transition: opacity 0s ease-in-out;
+}
+
+.cf img.top:hover {
+  opacity:0;
+}
+
+.pullDown {
+  color: #847d80;
+  margin-top: 55%;
+  margin-left: 21%;
+  margin-right: 20.5%;
+  pointer-events:none;
+}
+
+p.big {
+  line-height: 150%;
+}
+
+.button.is-warning {
+  background-color: #ed781e;
+  border-color: transparent;
+  color: white;
+  font-weight: bold;
+}
+
+.button.is-warning:hover, .button.is-warning.is-hovered {
+  background-color: #ea631f;
+  border-color: transparent;
+  color: white;
+}
+
+.button.is-warning:focus, .button.is-warning.is-focused {
+  border-color: transparent;
+  color: white;
+}
+
+.button.is-warning:focus:not(:active), .button.is-warning.is-focused:not(:active) {
+  -webkit-box-shadow: 0 0 0 0.125em rgba(255, 221, 87, 0.25);
+          box-shadow: 0 0 0 0.125em rgba(255, 221, 87, 0.25);
+}
+
+.button.is-warning:active, .button.is-warning.is-active {
+  background-color: #ed781e;
+  border-color: transparent;
+  color: white;
+}
+
+.lightGrn {
+  color: #6F930D;
+  text-decoration: underline;
+  /*font-weight: bold;*/
+}
+
+</style>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.6.0/dist/clipboard.min.js"></script>
+
+<div class="paddown">
+  <div class="columns is-mobile is-centered is-gapless grn">
+    <div class="column is-hidden-mobile">
+      <figure class="image">
+        <img src="img/step2.png" alt="">
+      </figure>
+    </div>
+    <div class="column has-text-centered">
+      <div class="columns is-mobile is-centered paddown">
+        <div class="column is-8">
+          <div class="field paddownL">
+            <img src="img/iXPanel_wht.svg" alt="宇宙最有聊的問卷網站" style="height:35px">
+            <p class="subtitle is-6 has-text-white has-text-weight-bold">
+              宇宙最有聊的問卷網站
+            </p>
+          </div>
+          <div class="field paddownL">
+            <div class="control">
+              <p class="title is-4 has-text-white has-text-centered">(σ ° ▽°)σ..:*☆</p>
+              <p class="subtitle is-6 has-text-white has-text-centered paddown">
+                啊！你註冊過會員囉～<br>但是還沒驗證，快去你的信箱收驗證信！
+              </p>
+            </div>
+          </div>
+          <div class="field paddownL">
+            <a class="button is-warning" href="https://www.ixpanel.com">GO</a>
+          </div>
+          <div class="field paddownL">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+    <div class="content has-text-centered is-small">
+      <p>
+        Copyright © 2017 創市際市場研究顧問公司 InsightXplorer
+      </p>
+    </div>
+</div>
+</body>
+</html>

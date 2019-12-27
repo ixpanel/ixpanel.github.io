@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>161027_NavBar Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="import/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="import/bootstrap/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="www.ixpanel.com"><img class="img-responsive" src="img/iXPanel_Logo.svg"></a>
+        </div>
+        <div class="col-xs-12 col-sm-8">
+            <form class="form-inline" action="index.html" method="post">
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Email">
+                <input type="password" class="form-control" id="password" placeholder="密碼">
+                 <div class="clearfix visible-sm"></div>
+                <input type="button" class="btn btn-success roundBtn" name="mail" value="登入">
+                <input type="button" class="btn btn-primary roundBtn" name="FBlogin" value="Facbook登入">
+              </div>
+            </form>
+        </div>
+        <div class="col-xs-12 col-sm-2">
+          <h5><a href="#">忘記密碼？</a></h5>
+          <h5>還不是會員？<a id="modal-SignUp" href="#modal-container-SignUp" role="button" class="btn" data-toggle="modal">立刻加入</a></h5>
+          <div class="modal fade" id="modal-container-SignUp" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    				<div class="modal-dialog">
+    					<div class="modal-content">
+    						<div class="modal-header">
+    							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+    								×
+    							</button>
+                  <div class="LB_Logo">
+                      <img src="img/iXPanel_Logo.svg">
+                      <div>即刻開始分享自己的日常觀點</div>
+                      <button type="button" class="btn btn-primary roundBtn btn-block" name="FBlogin">Facebook登入</button>
+                  </div>
+    						</div>
+    						<div class="modal-body">
+                    <div class="col-xs-12">
+                      <form class="form-group" action="index.html" method="post">
+                        <input type="email" class="form-control" id="email" placeholder="請輸入Email" name="mail" value="">
+                        <input type="password" class="form-control" id="password" placeholder="密碼英數混合6-12字" name="pass" value="">
+                      </form>
+                    </div>
+    						</div>
+    						<div class="modal-footer">
+                  <div class="col-xs-12">
+                    <p class="small">
+                      按下註冊鈕的同時，表示您已詳細瞭解 iXPanel 的<a href="#">服務條款及資料使用政策</a>
+                    </p>
+      							<button type="button" class="btn btn-success roundBtn btn-block">註  冊</button>
+                  </div>
+    						</div>
+    					</div>
+
+    				</div>
+
+    			</div>
+        </div>
+      </div>
+    </div>
+		<div class="container">
+			<div class="jumbotron jumbotron-fluid">
+				<img class="img-responsive" src="img/HeroImg.png">
+        <div class="PK">
+
+        </div>
+			</div>
+    </div>
+    <div class="container">
+      <div class="col-xs-12 col-md-6">
+        <div class="">
+
+        </div>
+      </div>
+    </div>
+
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="import/bootstrap/js/bootstrap.js"></script>
+  </body>
+</html>

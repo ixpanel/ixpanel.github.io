@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>161026_Logined-BasicInfo_confirmation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="import/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="import/bootstrap/css/style.css" rel="stylesheet">
+		<style>
+		</style>
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="www.ixpanel.com"><img src="img/iXPanel_Logo.svg"></a>
+        </div>
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse navHeaderCollapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">最新調查</a></li>
+            <li><a href="#">參與紀錄</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">兌換獎勵</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">立即兌換</a></li>
+								<li><a href="#">兌換紀錄</a></li>
+							</ul>
+						</li>
+            <li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">帳戶管理</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">會員資料</a></li>
+								<li><a href="#">兌換資料</a></li>
+								<li><a href="#">變更密碼</a></li>
+								<li><a href="#">聯繫客服</a></li>
+							</ul>
+						</li>
+            <li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">邀請朋友</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">立即邀請</a></li>
+								<li><a href="#">邀請紀錄</a></li>
+							</ul>
+						</li>
+						<li><a href="#">登出</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+		<div class="container">
+			<div class="row">
+				<h3>會員資料</h3>
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-md-4">
+					<div class="col-sm-6">
+						<img class="img-thumbnail" src="img/DemoPortrait.png" alt="Thumbnail image">
+					</div>
+					<div class="col-sm-6">
+						<input type="file" role="button" class="btn btn-success form-control-file" id="exampleInputFile">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<div class="form-group">
+						<label for="name">真實姓名</label>
+						<input type="name" class="form-control" id="name">
+					</div>
+					<div class="form-group">
+						<label for="name">暱稱</label>
+						<input type="nickname" class="form-control" id="nickname">
+					</div>
+					<div class="form-group">
+						<label for="id">登入帳號</label>
+						<input type="id" class="form-control" id="id">
+					</div>
+					<div class="form-group">
+						<label for="email">電子信箱</label>
+						<input type="email" class="form-control" id="email">
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<div class="form-group">
+						<label for="birthday">生日</label>
+						<input type="date" class="form-control" id="birthday">
+					</div>
+					<div class="form-group">
+						<label for="gender">性別</label>
+						<br>
+						<label class="radio-inline">
+							<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">男
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">女
+						</label>
+					</div>
+					<div class="form-group">
+						<label for="job">職業</label>
+						<select class="form-control">
+							<option>白領</option>
+							<option>藍領</option>
+							<option>無產</option>
+							<option>家管</option>
+							<option>待業</option>
+						</select>
+
+					</div>
+				</div>
+			</div>
+			<div class="row row-centered">
+				<button type="cancel" class="btn btn-success roundBtn">取消修改</button>
+				<button type="submit" class="btn btn-success roundBtn">儲存</button>
+			</div>
+		</div>
+		<div class="container orangebox">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<div class="col-xs-6">
+						<h3>簡訊推播通知</h3>
+							<h5>立即進行手機驗證，您將享有「急速招募問卷」的優先通知權！</h5>
+					</div>
+					<div class="col-xs-2">
+						<img src="btn/PUSH.svg">
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<div class="form">
+						<label for="mobileNumber">行動電話</label>
+						<input type="text" maxlength="10" pattern="[0-9]{10}" class="form-control" id="phone">
+						<h5>限取乙次，未收到簡訊請<a href="#">聯繫客服</a></h5>
+						<button type="submit" class="btn btn-default roundBtn">發送驗證碼</button>
+					</div>
+				</div>
+		</div>
+
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="import/bootstrap/js/bootstrap.js"></script>
+  </body>
+</html>

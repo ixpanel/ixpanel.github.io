@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>你的冒險屬性</title>
+
+  <link rel="stylesheet" type="text/css" href="bulma/css/bulma.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="你的冒險屬性">
+  <meta property="og:image" content="https://c1.staticflickr.com/5/4479/37133204023_001e4c1192_o.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:description" content="因為你理解冒險的路上充滿各種未知與疑惑，我們亟需你的視野，來吧，和我們一起，把宇宙連起來！">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="favi/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favi/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favi/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favi/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favi/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favi/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favi/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favi/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favi/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favi/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favi/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favi/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favi/favicon-16x16.png">
+  <link rel="manifest" href="favi/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favi/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+<style>
+@import 'bulma/sass/utilities/_all.sass';
+@import 'bulma/divider.sass';
+
+body {
+  background-image: url(img/BG-03.png);
+  background-repeat: no-repeat;
+  background-position: 0% 6%;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.wht {
+  background-color: white;
+}
+
+.grn {
+  background-color: #aacc03;
+}
+
+.hBorder {
+  border-color: #aacc03;
+  border-top-style: solid;
+  border-top-width: 10px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.bBorder {
+  border-color: #aacc03;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+
+
+.paddown {
+  padding-top: 3%;
+}
+
+.paddownS {
+  padding-top: 1%;
+}
+
+.paddownL {
+  padding-top: 10%;
+}
+
+.footer {
+  background-color: #FFF;
+  padding: 2rem 1rem 4rem;
+}
+
+.button {
+  border-radius: 30px;
+  padding-left: 1.8em;
+  padding-right: 1.8em;
+  height: 3em;
+  font-size: 12px;
+}
+
+.cf img {
+  -webkit-transition: opacity 0s ease-in-out;
+  -moz-transition: opacity 0s ease-in-out;
+  -o-transition: opacity 0s ease-in-out;
+  transition: opacity 0s ease-in-out;
+}
+
+.cf img.top:hover {
+  opacity:0;
+}
+
+.pullDown {
+  color: #847d80;
+  margin-top: 55%;
+  margin-left: 21%;
+  margin-right: 20.5%;
+  pointer-events:none;
+}
+
+p.big {
+  line-height: 150%;
+}
+
+.button.is-warning {
+  background-color: #ed781e;
+  border-color: transparent;
+  color: white;
+  font-weight: bold;
+}
+
+.button.is-warning:hover, .button.is-warning.is-hovered {
+  background-color: #ea631f;
+  border-color: transparent;
+  color: white;
+}
+
+.button.is-warning:focus, .button.is-warning.is-focused {
+  border-color: transparent;
+  color: white;
+}
+
+.button.is-warning:focus:not(:active), .button.is-warning.is-focused:not(:active) {
+  -webkit-box-shadow: 0 0 0 0.125em rgba(255, 221, 87, 0.25);
+          box-shadow: 0 0 0 0.125em rgba(255, 221, 87, 0.25);
+}
+
+.button.is-warning:active, .button.is-warning.is-active {
+  background-color: #ed781e;
+  border-color: transparent;
+  color: white;
+}
+
+.lightGrn {
+  color: #6F930D;
+  text-decoration: underline;
+}
+
+.Green {
+  color: #aacc03;
+  font-weight: bold;
+  margin-top: -2px;
+}
+
+.modal-content,
+.modal-card {
+  margin: 0 auto;
+  max-height: calc(100vh - 160px);
+  overflow: auto;
+  position: relative;
+  width: 90%;
+}
+
+@media screen and (min-width: 769px), print {
+  .modal-content,
+  .modal-card {
+    margin: 0 auto;
+    max-height: calc(100vh - 40px);
+    width: 600px;
+  }
+}
+
+.modal-background {
+  background-color: rgba(10, 10, 10, 0.4);
+}
+
+.modal-card-head {
+  border-bottom: 0px;
+  background-color: white;
+}
+
+.modal-card-foot {
+  background-color: white;
+  -webkit-justify-content: center;
+          justify-content: center;
+  border-top: 0px;
+}
+
+
+</style>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.6.0/dist/clipboard.min.js"></script>
+
+
+  <section class="hero is-white ">
+    <div class="hero-body hBorder">
+      <div class="level">
+        <p class="level-item">
+          <img src="img/eventTitle.png" alt="" style="height: 40px;">
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="columns paddown is-centered is-mobile">
+  <div class="column is-11 paddown">
+    <div class="columns is-multiline">
+      <div class="column is-3-desktop is-6-tablet is-12-mobile">
+        <figure class="image ">
+          <a data-toggle="modal" data-target="#alligator">
+            <img class="bottom" src="img/alligatorCircle.png" alt="">
+            <div class="">
+              <div class="is-overlay pullDown">
+                <p class="subtitle is-size-7-desktop is-size-6-fullhd is-size-5-tablet is-size-6-touch big">外表強硬又帶刺，大家常忽略你擁有沉著而柔軟的內心，熱鬧很棒，但你一點都不介意孤單。</p>
+              </div>
+            </div>
+          </a>
+        </figure>
+      </div>
+      <div class="column is-3-desktop is-6-tablet is-12-mobile">
+        <figure class="image ">
+          <a data-toggle="modal" data-target="#carp">
+            <img src="img/carpCircle.png" alt="">
+            <div class="">
+              <div class="is-overlay pullDown">
+                <p class="subtitle is-size-7-desktop is-size-6-fullhd is-size-5-tablet is-size-6-touch big">無水不歡，你需要專屬的冒險舞台，但你對環境的耐受度超強，在別人眼裡顯得活潑又靈巧。</p>
+              </div>
+            </div>
+          </a>
+        </figure>
+      </div>
+      <div class="column is-3-desktop is-6-tablet is-12-mobile">
+        <figure class="image ">
+          <a data-toggle="modal" data-target="#elephant">
+            <img src="img/elephantCircle.png" alt="">
+            <div class="">
+              <div class="is-overlay pullDown">
+                <p class="subtitle is-size-7-desktop is-size-6-fullhd is-size-5-tablet is-size-6-touch big">穩重踏實的你情感卻纖細豐沛，一不小心就會掉兩滴淚，冒險時隨身帶著小俏皮，人見人愛。</p>
+              </div>
+            </div>
+          </a>
+        </figure>
+      </div>
+      <div class="column is-3-desktop is-6-tablet is-12-mobile">
+        <figure class="image ">
+          <a data-toggle="modal" data-target="#dackel">
+            <img src="img/dackelCircle.png" alt="">
+            <div class="">
+              <div class="is-overlay pullDown">
+                <p class="subtitle is-size-7-desktop is-size-6-fullhd is-size-5-tablet is-size-6-touch big">果敢熱情，想到就立刻行動的冒險家，因為心地好得過頭常吃悶虧，摸摸鼻子又是一條好漢。</p>
+              </div>
+            </div>
+          </a>
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="alligator" tabindex="-1" aria-hidden="true">
+  <div class="modal-background" data-dismiss="modal"></div>
+  <div class="modal-card modal-wide" style="margin-top:4%">
+    <header class="modal-card-head">
+      <p class="modal-card-title"></p>
+      <button class="delete is-pulled-right" data-dismiss="modal" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+        <div class="columns is-multiline">
+          <div class="column has-text-centered">
+            <div class="title">
+              <nav class="level">
+                <p class="level-item has-text-centered">
+                  <img src="img/alligatorTitle.png" style="height:45px;">
+                </p>
+              </nav>
+            </div>
+            <div class="subtitle is-7 paddownS">
+              外硬內軟的鐵漢柔情
+            </div>
+            <figure class="image">
+              <img src="img/alligatorModal_2.png" alt="">
+            </figure>
+            <nav class="level is-mobile paddownL">
+              <div class="level-item has-text-centered">
+                <div class="">
+                  <p class="heading">最速鱷魚每秒可跑</p>
+                  <p class="title">4.7米</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div class="">
+                  <p class="heading">生物學裡祖先是</p>
+                  <p class="title">鳥類</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div class="">
+                  <p class="heading">不游泳時在水裡都</p>
+                  <p class="title">站著</p>
+                </div>
+              </div>
+              <div class="paddownL">
+              </div>
+            </nav>
+          </div>
+        </div>
+    </section>
+    <footer class="modal-card-foot"></footer>
+  </div>
+</div>
+
+<div class="modal" id="carp" tabindex="-1" aria-hidden="true">
+  <div class="modal-background" data-dismiss="modal"></div>
+  <div class="modal-card modal-wide" style="margin-top:4%">
+    <header class="modal-card-head">
+      <p class="modal-card-title"></p>
+      <button class="delete is-pulled-right" data-dismiss="modal" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+        <div class="columns is-multiline">
+          <div class="column has-text-centered">
+            <div class="title">
+              <nav class="level">
+                <p class="level-item has-text-centered">
+                  <img src="img/carpTitle.png" style="height:45px;">
+                </p>
+              </nav>
+            </div>
+            <div class="subtitle is-7 paddownS">
+              生命極度強韌的優雅水妖
+            </div>
+            <figure class="image">
+              <img src="img/carpModal_2.png" alt="">
+            </figure>
+            <nav class="level is-mobile paddownL">
+              <div class="level-item has-text-centered">
+                <div class="">
+                  <p class="heading">最長壽的錦鯉活到</p>
+                  <p class="title">226歲</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div class="">
+                  <p class="heading">最大的巨暹羅鯉身長</p>
+                  <p class="title">1.8米</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div class="">
+                  <p class="heading">被稱游動寶石的日本國魚</p>
+                  <p class="title">錦鯉</p>
+                </div>
+              </div>
+              <div class="paddownL">
+              </div>
+            </nav>
+          </div>
+        </div>
+    </section>
+    <footer class="modal-card-foot"></footer>
+  </div>
+</div>
+
+<div class="modal" id="elephant" tabindex="-1" aria-hidden="true">
+  <div class="modal-background" data-dismiss="modal"></div>
+  <div class="modal-card modal-wide" style="margin-top:4%">
+    <header class="modal-card-head">
+      <p class="modal-card-title"></p>
+      <button class="delete is-pulled-right" data-dismiss="modal" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <div class="columns is-multiline">
+        <div class="column has-text-centered">
+          <div class="title">
+            <nav class="level">
+              <p class="level-item has-text-centered">
+                <img src="img/elephantTitle.png" style="height:45px;">
+              </p>
+            </nav>
+          </div>
+          <div class="subtitle is-7 paddownS">
+            四條腿絕不會同時離開地面
+          </div>
+          <figure class="image">
+            <img src="img/elephantModal_2.png" alt="">
+          </figure>
+            <nav class="level is-mobile paddownL">
+              <div class="level-item has-text-centered">
+                <div class="">
+                  <p class="heading">懷孕生子十分漫長</p>
+                  <p class="title">22個月</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div class="">
+                  <p class="heading">每天吃東西要花</p>
+                  <p class="title">16小時</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div class="">
+                  <p class="heading">每分鐘心跳只有</p>
+                  <p class="title">27下</p>
+                </div>
+              </div>
+              <div class="paddownL">
+              </div>
+            </nav>
+          </div>
+        </div>
+    </section>
+    <footer class="modal-card-foot"></footer>
+  </div>
+</div>
+
+<div class="modal" id="dackel" tabindex="-1" aria-hidden="true">
+  <div class="modal-background" data-dismiss="modal"></div>
+  <div class="modal-card modal-wide" style="margin-top:4%">
+    <header class="modal-card-head">
+      <p class="modal-card-title"></p>
+      <button class="delete is-pulled-right" data-dismiss="modal" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+        <div class="columns is-multiline">
+          <div class="column has-text-centered">
+            <div class="title">
+              <nav class="level">
+                <p class="level-item has-text-centered">
+                  <img src="img/dackelTitle.png" style="height:45px;">
+                </p>
+              </nav>
+            </div>
+            <div class="subtitle is-7 paddownS">
+              聰明獨立的天生探險者
+            </div>
+            <figure class="image">
+              <img src="img/dackelModal_2.png" alt="">
+            </figure>
+            <nav class="level is-mobile paddownL">
+              <div class="level-item has-text-centered">
+                <div class="">
+                  <p class="heading">腿短但天生喜歡</p>
+                  <p class="title">挖掘</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div class="">
+                  <p class="heading">愛追著異味繞圈譬如</p>
+                  <p class="title">蚯蚓</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div class="">
+                  <p class="heading">狗狗平均智商約人類</p>
+                  <p class="title">2歲</p>
+                </div>
+              </div>
+              <div class="paddownL">
+              </div>
+            </nav>
+          </div>
+        </div>
+    </section>
+    <footer class="modal-card-foot"></footer>
+  </div>
+</div>
+<div class="paddown">
+  <div class="hero is-white">
+    <div class="hero-body bBorder">
+      <div class="container">
+        <div class="container is-fluid">
+          <div class="container is-fluid">
+            <div class="container is-fluid">
+              <p class="subtitle is-6 big">
+                <p class="Green has-text-bold">
+                  每一天，你的大大小小決定構成了獨一無二的你，我們想知道每一個你的想法、收集每一個你的答案，在 iX:Panel 不只是單向的發表意見，透過創市際串連起每一個你、每一個答案與決定，我們將會看見事物的輪廓。
+                </p>
+                <div class="paddown">
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </p>
+    </div>
+  </div>
+</div>
+<div class="">
+  <div class="columns is-mobile is-centered is-gapless grn">
+    <div class="column is-hidden-mobile">
+      <figure class="image">
+        <img src="img/step2.png" alt="">
+      </figure>
+    </div>
+    <div class="column has-text-centered">
+      <div class="columns is-mobile is-centered paddown">
+        <div class="column is-8">
+          <div class="field paddownL">
+            <img src="img/iXPanel_wht.svg" alt="宇宙最有聊的問卷網站" style="height:35px">
+            <p class="subtitle is-6 has-text-white has-text-weight-bold">
+              宇宙最有聊的問卷網站
+            </p>
+          </div>
+          <div class="field paddown">
+            <div class="control has-text-centered">
+              <input class="button is-link has-text-weight-bold" type="submit" name="" value="Facebook 註冊">
+            </div>
+          </div>
+          <p class="subtitle is-size-7 has-text-white paddown">————————— <strong class="has-text-white">或</strong> —————————</p>
+          <div class="field">
+            <div class="control">
+              <input class="input is-success" type="email" placeholder="帳號：請輸入 e-mail 格式">
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <input class="input is-success" type="password" placeholder="密碼：英數 6-12 字">
+            </div>
+          </div>
+          <div class="field has-text-white paddown">
+            <p class="title is-7 has-text-white">
+              按下註冊表示您已同意 iX:Panel 的 <a class="lightGrn" href="https://www.ixpanel.com/privacy.jsp">服務條款及資料使用政策</a>。
+            </p>
+          </div>
+          <div class="field">
+            <input class="button is-warning" type="submit" name="" value="註冊">
+          </div>
+          <div class="field paddownL">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+    <div class="content has-text-centered is-small">
+      <p>
+        Copyright © 2017 創市際市場研究顧問公司 InsightXplorer
+      </p>
+    </div>
+</div>
+</body>
+</html>

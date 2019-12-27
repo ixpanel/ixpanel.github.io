@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Basic Infos</title>
+<style>
+body {
+	font-family: 'Noto Sans',sans-serif;
+    -moz-transform: scale(0.9, 0.9); /* Moz-browsers */
+    zoom: 0.9; /* Other non-webkit browsers */
+    zoom: 90%; /* Webkit browsers */
+}
+.wrapper {
+	width:1280px;
+	margin:0 auto;
+}
+a:link {
+    color:inherit;
+	text-decoration: none;
+}
+a:visited {
+    color:inherit;
+}
+a:hover {
+	color:#ff691b;
+}
+.logo {
+	position:relative;
+	left:41px; top:-62px;
+	width:1280px;
+}
+ul.navi {
+    list-style-type: none;
+    margin: 10px 0px;
+		padding:0;
+    overflow: hidden;
+    background-color: #f8fff9;
+		border-bottom:2px solid #a3d15a;
+		border-top:2px solid #a3d15a;
+		font-family: sans-serif;
+		font-size:16px;
+		font-weight:normal;
+}
+li.navi {
+    float: right;
+}
+li.navi a, .dropbtn {
+    display: block;
+    color: #878985;
+    text-align: center;
+    padding: 25px 30px;
+    text-decoration: none;
+}
+li.dropdown {
+	display:inline-block;
+}
+li.navi a:hover, .dropdown:hover .dropbtn {
+    background-color: #a3d15a;
+    color: white;
+}
+.dropdown-content {
+	display:none;
+	position:absolute;
+	background-color:#FFF;
+	min-width:inherit;
+	box-shadow:2px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.dropdown-content a {
+	color:#878985;
+	padding: 15px 33px;
+	text-decoration:none;
+	display:block;
+	text-align:center;
+	font-size:14px;
+}
+.dropdown-content a:hover {
+	background-color:inherit;
+	color:#a3d15a;
+}
+.dropdown:hover .dropdown-content {
+	display:block;
+	background-color:white;
+	border:1px solid #cfe874
+}
+a.name {
+	font-size:14px;
+	font-weight:bold;
+	text-align:right;
+	font-family: sans-serif;
+	color:#bfbfbf;
+	padding:0px 10px;
+}
+a.logout {
+	font-size:14px;
+	font-weight:bold;
+	text-align:right;
+	font-family: sans-serif;
+	color:#bfbfbf;
+}
+a.logout:hover {
+	color:#333;
+	font-weight:bold;
+}
+#twoCol {
+	position:relative;
+	display: inline-block;
+	top:730px;
+	width:1280px;
+	background-color:#FFF;
+	font-family: 'Noto Sans', sans-serif;
+}
+#twoCol a {
+	font-family: 'Noto Sans', sans-serif;
+	color:#FFF;
+}
+#vertical {
+	position:absolute;
+	left:639px;
+	width:1px;
+	height:100%;
+	background-color:#fff;
+}
+#PUSH_L {
+	background-color:#ffb24d;
+	position:relative;
+	float:left;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+  justify-content:center;
+	width:50%;
+	height:240px;
+	text-align:left;
+}
+#BiWeekly_dcrp {
+	position:relative;
+	padding:80px 0px 0px 150px;
+	margin-right:10px;
+	line-height:1.2;
+}
+#PUSH_img {
+	position:relative;
+	padding:85px 60px 0px 15px;
+}
+#PUSH_R {
+	display:block;
+	background-color:#ffb24d;
+	position:relative;
+	float:right;
+	width:50%;
+	height:240px;
+	text-align:left;
+	line-height:1.2;
+}
+#LatestEntries ul {
+	list-style-type:disc;
+	padding-left:80px;
+	color:#fff;
+	font-size:16px;
+	line-height:1.8;
+}
+#LatestEntries ul a {
+	color:#fff;
+	text-decoration:none;
+	font-size:13px;
+	font-family: 'Noto Sans', sans-serif;
+}
+#LatestEntries ul a:hover {
+	color:#ff691b;
+}
+#LatestEntries_title {
+	position:relative;
+	text-align:left;
+	padding:40px 0px 0px 65px;
+}
+p.login {
+	font-size: 12px;
+	font-weight: 700;
+	color: #878985;
+	position: absolute;
+	left: 1099px;
+	top: 13px;
+}
+h1 {
+	color:#fff;
+	font-size:30px;
+	font-weight: 700;
+	line-height:0px;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-family: 'Noto Sans', sans-serif;
+}
+h2 {
+	color:#fff;
+	font-size:25px;
+	font-weight:700;
+	line-height:0px;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-family: 'Noto Sans', sans-serif;
+}
+p1 {
+	color:#fff;
+	font-size:12px;
+	line-height:1.5x;
+	letter-spacing:2px;
+	font-family: 'Noto Sans', sans-serif;
+}
+p2 {
+	color:#fff;
+	font-size:14px;
+	font-family: 'Noto Sans', sans-serif;
+	font-weight:700;
+}
+h4 {
+	color:#fff;
+	font-size:12px;
+	line-height:normal;
+	letter-spacing:2px;
+	font-weight:400;
+}
+.form-style{
+    width: 1280px;
+	height:90px;
+	position:absolute;
+	left:400px;
+	top:-1;
+}
+.form-style ul{
+    padding:10px 40px;
+    list-style:none;
+}
+.form-style ul li{
+    min-height: 40px;
+}
+.form-style ul li  .field-style{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width:200px;
+	padding: 8px;
+    outline: none;
+    border: 1px solid #878985;
+	border-radius:5px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+.form-style ul li  .field-style:focus{
+    border:1px solid #a3d15a;
+}
+.form-style ul li input[type="button"],
+.form-style ul li input[type="submit"]
+{
+	height:37px;
+    background-color: #a3d15a;
+    border: 3px solid #a3d15a;
+	border-radius:20px;
+    cursor: pointer;
+    color: #fff;
+    padding: 5px 23px;
+    text-decoration: none;
+	font-size:16px;
+	font-weight:700;
+}
+.form-style ul li input[type="button"]:hover,
+.form-style ul li input[type="submit"]:hover {
+    background-color: #fff;
+	color:#a3d15a;
+}
+.image:hover {
+-webkit-transform:scale(1.1);
+transform:scale(1.1);
+}
+.image {
+-webkit-transition: all 0.7s ease;
+transition: all 0.3s ease;
+}
+
+</style>
+</head>
+
+<body>
+<div style="text-align:right">
+<a class="name">不動明王</a><a class="logout" href="logout">登出</a>
+</div>
+<div class="">
+    <ul class="navi">
+      <li class="navi dropdown">
+          <a href="#invitation" class="dropbtn">邀請朋友</a>
+          <div class="navi dropdown-content">
+        	<a href="#">立即邀請</a>
+        	<a href="#">邀請紀錄</a>
+          </div>
+      </li>
+      <li class="navi dropdown">
+      	<a href="#account" class="dropbtn">帳戶管理</a>
+        <div class="dropdown-content">
+        	<a href="#">會員資料</a>
+        	<a href="#">兌換資料</a>
+        	<a href="#">變更密碼</a>
+        	<a href="#">聯繫客服</a>
+        </div>
+      </li>
+      <li class="navi dropdown">
+          <a href="#CheckOut" class="dropbtn">兌換獎勵</a>
+          <div class="dropdown-content">
+          	<a href="#">立即兌換</a>
+          	<a href="#">兌換紀錄</a>
+          </div>
+      </li>
+      <li class="navi"><a href="#record">參與紀錄</a></li>
+      <li class="navi"><a href="#latestQ">最新調查</a></li>
+    </ul>
+    <div class="logo">
+        <a href="http://ixpanel.com"><img src="img/iXPanel_Logo.svg" /></a>
+      </div>
+</div>
+
+<div class="wrapper">
+    <div id="twoCol">
+        <div id="PUSH_L">
+            <div id="BiWeekly_dcrp">
+                <h1>簡訊推播通知</h1>
+                    <p1>立即進行手機驗證，您將享有「急速招募問卷」的優先通知權！</p1>
+            </div>
+            <div id="vertical"></div>
+            <div id="PUSH_img">
+                <div class="image">
+                    <img src="btn/BiWeekly.svg">
+                </div>
+            </div>
+        </div>
+        <div id="PUSH_R">
+            <div id="LatestEntries_title">行動電話</div>
+            <ul>
+                <a href="http://www.ixresearch.com/?p=12989">
+                <li>10/17 Pokémon Go調查與美國行動用戶使用概況</li>
+                </a>
+                <a href="http://www.ixresearch.com/?p=13016">
+                <li>10/05 Top 10 News/Information Entities in US/JP/CN/HK/TW</li>
+                </a>
+                <a href="http://www.ixresearch.com/?p=13040">
+                <li>09/30 廉價航空網站使用概況及旅遊篇市調解析</li>
+                </a>
+                <a href="http://www.ixresearch.com/?p=12989">
+                <li>09/21 Video Metrix® 2016年07月台灣網路影音使用觀察</li>
+                </a>
+                <a href="http://www.ixresearch.com/?p=13016">
+                <li>09/20 MMX™ 2016年07月台灣網路活動分析</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

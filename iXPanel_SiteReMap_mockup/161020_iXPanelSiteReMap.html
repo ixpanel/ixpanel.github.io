@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta carset="utf-8" />
+<title>BiWeekly</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+<script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Nunito:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Oxygen:400,700" rel="stylesheet">
+<style>
+body {
+	font-family: 'Noto Sans',sans-serif;
+    -moz-transform: scale(0.9, 0.9); /* Moz-browsers */
+    zoom: 0.9; /* Other non-webkit browsers */
+    zoom: 90
+	%; /* Webkit browsers */
+}
+.wrapper {
+	width:1280px;
+	margin:0 auto;
+}
+a:link {
+    color:inherit;
+	text-decoration: none;
+}
+a:visited {
+    color:inherit;
+}
+a:hover {
+	color:#ff691b;
+}
+.menu {
+    position: fixed;
+	background-color:#f8fff9;
+	width:1280px;
+	height:90px;
+	top:0px;
+	z-index:4;
+	border-bottom:3px solid #a3d15a;
+}
+#twoCol {
+	position:relative; 
+	display: inline-block;
+	top:730px;
+	width:1280px; 
+	background-color:#FFF;
+	font-family: 'Noto Sans', sans-serif;
+}
+#twoCol a {
+	font-family: 'Noto Sans', sans-serif;
+	color:#FFF;
+}
+
+#LoginSec {
+	width:;
+	height:;
+	z-index:5;
+}
+#BiWeekly {
+	background-color:#a3d15a;
+	position:relative; 
+	float:left;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+    justify-content:center;
+	width:50%;
+	height:240;
+	color:#099;
+	text-align:left;
+}
+#BiWeekly_dcrp {
+	position:relative;
+	padding:80px 0px 80px 150px;
+	margin-right:10px;
+	line-height:1.2;
+}
+#BiWeekly_img {
+	position:relative;
+	padding:85px 120px 80px 15px;
+}
+#LatestEntries {
+	display:block;
+	background-color:#a3d15a;
+	position:relative; 
+	float:right;
+	width:50%;
+	height:240;
+	color:#099;
+	text-align:left;
+	line-height:1.2;
+}
+#LatestEntries ul {
+	list-style-type:disc;
+	padding:37px 0px 36px 80px;
+	color:#fff;
+	font-size:16px;
+	line-height:1.8;
+}
+#LatestEntries ul a {
+	color:#fff;
+	text-decoration:none;
+	font-size:13px;
+	font-family: 'Noto Sans', sans-serif;
+}
+#LatestEntries ul a:hover {
+	color:#ff691b;
+}
+#LatestEntries p2 {
+	position:relative; 
+	color:#FFF;
+	text-align:left;
+}
+#bmWrapper {
+	display: -webkit-inline-flex;
+	display: inline-flex;
+    justify-content:center;
+	position:absolute;
+	top:1050px;
+	width:1280px;
+}
+#bm {
+	margin:25px 60px;
+	text-align:center;
+	color:#bfbfbf;
+}
+.bannerContainer {
+	position:relative; 
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	top:1200px; 
+	width:1280px; height:520px;
+	font-family: 'Noto Sans', sans-serif;
+}
+#banner {
+	width:25%;
+	height:520px;
+}
+#textbox {
+	width: 250px;
+	padding:25px;
+	margin-top:150px;
+	margin-left:auto;
+	margin-right:auto;	
+}
+#footer {
+	font-family: 'Noto Sans', sans-serif;
+	position:relative; 
+    top:1200px; 
+	width:1280px;
+	height:100px;
+	border-top:3px solid #a3d15a; 
+}
+.marquee {
+	background-color:#f2f2f2; 
+	position:absolute;
+	top:680px;
+	width:1280px; 
+	height:60px;
+	color:#277a3d;
+	box-shadow:inset 0px 3px 8px 0px rgba(0,0,0,0.1);
+	z-index:0;
+}
+.marquee a {
+	font-size:16px;
+	color:#277a3d;
+}
+p.login {
+	font-size: 12px;
+	font-weight: 700;
+	color: #878985;
+	position: absolute;
+	left: 1099px;
+	top: 13px;
+}
+h1 {
+	color:#fff;
+	font-size:30px;
+	font-weight: 700;
+	line-height:0px;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-family: 'Noto Sans', sans-serif;
+}
+h2 {
+	color:#fff;
+	font-size:25px;
+	font-weight:700;
+	line-height:0px;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-family: 'Noto Sans', sans-serif;
+}
+p1 {
+	color:#fff;
+	font-size:12px;
+	line-height:1.5x;
+	letter-spacing:2px;
+	font-family: 'Noto Sans', sans-serif;
+}
+p2 {
+	color:#fff;
+	font-size:14px;
+	font-family: 'Noto Sans', sans-serif;
+	font-weight:700;
+}
+h4 {
+	color:#fff;
+	font-size:12px;
+	line-height:normal;
+	letter-spacing:2px;
+	font-weight:400;
+}
+.form-style{
+    width: 1280px;
+	height:90px;
+	position:absolute;
+	left:400px;
+	top:-1;
+}
+.form-style ul{
+    padding:10px 40px;
+    list-style:none;
+}
+.form-style ul li{
+    min-height: 40px;
+}
+.form-style ul li  .field-style{
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    width:200px;
+	padding: 8px;
+    outline: none;
+    border: 1px solid #878985;
+	border-radius:5px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+.form-style ul li  .field-style:focus{
+    border:1px solid #a3d15a;
+}
+.form-style ul li input[type="button"], 
+.form-style ul li input[type="submit"] 
+{
+	height:37px;
+    background-color: #a3d15a;
+    border: 3px solid #a3d15a;
+	border-radius:20px;
+    cursor: pointer;
+    color: #fff;
+    padding: 5px 23px;
+    text-decoration: none;
+	font-size:16px;
+	font-weight:700;
+}
+.form-style ul li input[type="button"]:hover, 
+.form-style ul li input[type="submit"]:hover {
+    background-color: #fff;
+	color:#a3d15a;
+}
+.image:hover {
+-webkit-transform:scale(1.1);
+transform:scale(1.1);
+}
+.image {
+-webkit-transition: all 0.7s ease;
+transition: all 0.3s ease;
+}
+.PK {
+	position:absolute;
+	top:500px;
+	display:inline-block;
+	z-index:3;
+}
+#PKbox {
+	position:relative;
+	display:inline-block;
+	width:296px;
+	height:150px;
+	margin-left:5px;
+	margin-right:5px;
+	background-color:#a3d15a;
+	border:4px solid white;
+	border-radius:4px;
+	box-shadow:2px 3px 5px 0px rgba(0,0,0,0.1);
+}
+#PKtopicbox {
+	position:absolute;
+	top:114px;
+	left:2px;
+	text-align:center;
+	padding-top:6px;
+	color:#878985;
+	background-color:#fff;
+	width:291px;
+	height:28px;
+	z-index:3;
+}
+#PKtopicbox:hover {
+	color:#ff691b;
+}
+#PKtitle {
+	position:absolute;
+	text-align:center;
+	padding-left:116px;
+	font-family:'Nunito', sans-serif;
+	font-size:48px;
+	font-weight:700;
+	letter-spacing:3px;
+	color:rgba(255,255,255,0.2);
+    -webkit-transition: all 0.20s ease-in-out;
+    -moz-transition: all 0.20s ease-in-out;
+    -ms-transition: all 0.20s ease-in-out;
+    -o-transition: all 0.20s ease-in-out;
+}
+#PKtitle:hover {
+	color:#FFF;
+}
+#PKbtn_O {
+	position:absolute;
+	top:50px;
+	left:10px;
+}
+#PKbtn_X {
+	position:absolute;
+	top:50px;
+	right:10px;
+}
+#PKbar {
+	position:absolute;
+	background-color:#FFE44C;
+	width:200px;
+	height:20px;
+	top:68px;
+	left:50px;
+	font-family:'Nunito', sans-serif;
+	font-size:14px;
+	color:#878985;
+	text-align:center;
+	padding-top:3px;
+}
+#PKnavi_L {
+	position:relative;
+	top:-55px;
+	margin: 0px 50px 0px 70px;
+}
+#PKnavi_R {
+	position:relative;
+	top:-55px;
+	margin: 50px;
+}
+</style>
+
+<style type="text/css">
+
+#pscroller1{
+	width: 1280px;
+	height: 80px;
+	position:absolute;
+	z-index:2;
+	text-decoration: none;
+	color:#878985;
+	text-align:center;
+	font-size:19px;
+	line-height:20px; 
+	letter-spacing:2px;
+}
+#pscroller1 a{
+	text-decoration: none;
+}
+
+#pscroller1 a:hover {
+	color:#ff691b;
+}
+
+</style>
+
+<script type="text/javascript">
+
+/*Example message arrays for the two demo scrollers*/
+
+var pausecontent=new Array()
+pausecontent[0]='<br /><a href="http://www.javascriptkit.com">2016年新會員註冊立刻拿500CP'
+pausecontent[1]='<br /><a href="http://www.codingforums.com">2015年IX Mobile智慧型手機活動計劃，於2016年5月已完成並結束，感謝VIP會員的參與，敬請期待新年度計劃！'
+pausecontent[2]='<br /><a href="http://www.cssdrive.com" target="_new">沒梗惹不知道要講什麼'
+
+</script>
+
+<script type="text/javascript">
+
+/***********************************************
+* Pausing up-down scroller- (c) Dynamic Drive (www.dynamicdrive.com)
+* Please keep this notice intact
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+function pausescroller(content, divId, divClass, delay){
+this.content=content //message array content
+this.tickerid=divId //ID of ticker div to display information
+this.delay=delay //Delay between msg change, in miliseconds.
+this.mouseoverBol=0 //Boolean to indicate whether mouse is currently over scroller (and pause it if it is)
+this.hiddendivpointer=1 //index of message array for hidden div
+document.write('<div id="'+divId+'" class="'+divClass+'" style="position: relative; overflow: hidden"><div class="innerDiv" style="position: absolute; width: 100%" id="'+divId+'1">'+content[0]+'</div><div class="innerDiv" style="position: absolute; width: 100%; visibility: hidden" id="'+divId+'2">'+content[1]+'</div></div>')
+var scrollerinstance=this
+if (window.addEventListener) //run onload in DOM2 browsers
+window.addEventListener("load", function(){scrollerinstance.initialize()}, false)
+else if (window.attachEvent) //run onload in IE5.5+
+window.attachEvent("onload", function(){scrollerinstance.initialize()})
+else if (document.getElementById) //if legacy DOM browsers, just start scroller after 0.5 sec
+setTimeout(function(){scrollerinstance.initialize()}, 500)
+}
+
+// -------------------------------------------------------------------
+// initialize()- Initialize scroller method.
+// -Get div objects, set initial positions, start up down animation
+// -------------------------------------------------------------------
+
+pausescroller.prototype.initialize=function(){
+this.tickerdiv=document.getElementById(this.tickerid)
+this.visiblediv=document.getElementById(this.tickerid+"1")
+this.hiddendiv=document.getElementById(this.tickerid+"2")
+this.visibledivtop=parseInt(pausescroller.getCSSpadding(this.tickerdiv))
+//set width of inner DIVs to outer DIV's width minus padding (padding assumed to be top padding x 2)
+this.visiblediv.style.width=this.hiddendiv.style.width=this.tickerdiv.offsetWidth-(this.visibledivtop*0)+"px"
+this.getinline(this.visiblediv, this.hiddendiv)
+this.hiddendiv.style.visibility="visible"
+var scrollerinstance=this
+document.getElementById(this.tickerid).onmouseover=function(){scrollerinstance.mouseoverBol=1}
+document.getElementById(this.tickerid).onmouseout=function(){scrollerinstance.mouseoverBol=0}
+if (window.attachEvent) //Clean up loose references in IE
+window.attachEvent("onunload", function(){scrollerinstance.tickerdiv.onmouseover=scrollerinstance.tickerdiv.onmouseout=null})
+setTimeout(function(){scrollerinstance.animateup()}, this.delay)
+}
+
+
+// -------------------------------------------------------------------
+// animateup()- Move the two inner divs of the scroller up and in sync
+// -------------------------------------------------------------------
+
+pausescroller.prototype.animateup=function(){
+var scrollerinstance=this
+if (parseInt(this.hiddendiv.style.top)>(this.visibledivtop+10)){
+this.visiblediv.style.top=parseInt(this.visiblediv.style.top)-5+"px"
+this.hiddendiv.style.top=parseInt(this.hiddendiv.style.top)-5+"px"
+setTimeout(function(){scrollerinstance.animateup()}, 50)
+}
+else{
+this.getinline(this.hiddendiv, this.visiblediv)
+this.swapdivs()
+setTimeout(function(){scrollerinstance.setmessage()}, this.delay)
+}
+}
+
+// -------------------------------------------------------------------
+// swapdivs()- Swap between which is the visible and which is the hidden div
+// -------------------------------------------------------------------
+
+pausescroller.prototype.swapdivs=function(){
+var tempcontainer=this.visiblediv
+this.visiblediv=this.hiddendiv
+this.hiddendiv=tempcontainer
+}
+
+pausescroller.prototype.getinline=function(div1, div2){
+div1.style.top=this.visibledivtop+"px"
+div2.style.top=Math.max(div1.parentNode.offsetHeight, div1.offsetHeight)+"px"
+}
+
+// -------------------------------------------------------------------
+// setmessage()- Populate the hidden div with the next message before it's visible
+// -------------------------------------------------------------------
+
+pausescroller.prototype.setmessage=function(){
+var scrollerinstance=this
+if (this.mouseoverBol==1) //if mouse is currently over scoller, do nothing (pause it)
+setTimeout(function(){scrollerinstance.setmessage()}, 100)
+else{
+var i=this.hiddendivpointer
+var ceiling=this.content.length
+this.hiddendivpointer=(i+1>ceiling-1)? 0 : i+1
+this.hiddendiv.innerHTML=this.content[this.hiddendivpointer]
+this.animateup()
+}
+}
+
+pausescroller.getCSSpadding=function(tickerobj){ //get CSS padding value, if any
+if (tickerobj.currentStyle)
+return tickerobj.currentStyle["paddingTop"]
+else if (window.getComputedStyle) //if DOM2
+return window.getComputedStyle(tickerobj, "").getPropertyValue("padding-top")
+else
+return 0
+}
+</script>
+
+</head>
+
+<body bgcolor="#f8fff9">
+
+<div class="wrapper">
+
+<div class="menu">
+<a href="http://ixpanel.com" target="_blank">
+    <div style="background-image:url(img/iXPanel_Logo.svg); 
+        position:absolute; 
+        left:41px; top:30px; 
+        width:166px; height:29px;" 
+        title="LOGO">
+      </div>
+  </a>
+    <form class="form-style">
+        <ul>
+            <li>
+                <input type="email" name="field1" class="field-style" placeholder="ID/Email" />
+                <input type="password" name="field2" class="field-style" placeholder="密碼" />
+                <input type="submit" value="登入" />
+            </li>
+        </ul>
+    </form>
+      <div style="position:absolute; 
+        left:942px; top:25px; 
+        width:144px; height:34px;" 
+        title=“FB.Login”>
+	<a href="http://www.ixpanel.com/images/menu_newpanelfb.gif" >
+        <img src="btn/FB_login_mouse.svg" 
+        onmouseover="this.src='btn/FB_login.svg'" 
+        onmouseout="this.src='btn/FB_login_mouse.svg'" />        
+        </a>
+		</div>
+       <p class="login">
+       <a href="http://www.ixpanel.com/memberpsd.jsp">忘記密碼</a>
+       <br>
+       還不是會員？<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">加入會員</a>
+       </p>       
+</div>
+
+<div class="row"> 
+	<div style="background-image:url(img/HeroImg.png); 
+        position:absolute; 
+        top:90px; 
+        width:1280px; height:486px; 
+        z-index:-2" title="HeroImage">
+	</div>
+</div>
+
+
+<div class="PK">
+    <a id="PKnavi_L" href="toLeft"><img src="btn/CarouselArrow_L.svg" /></a>
+        <div id="PKbox">
+            <a id="PKtitle">PK</a>
+            <div id="PKbar">14<span style="padding-left:55px; padding-right:55px"></span>35</div>
+            <a id="PKbtn_O" class="image" href="YES"><img src="btn/PKbtn_O.svg"</a>
+            <a id="PKbtn_X" class="image" href="NO"><img src="btn/PKbtn_X.svg"</a>
+            <a id="PKtopicbox" href="http://pk.insightxplorer.com/pk.php?id=1759">你有在玩 Pokémon GO 嗎？</a>
+        </div>
+        <div id="PKbox">
+            <a id="PKtitle">PK</a>
+            <div id="PKbar">127<span style="padding-left:55px; padding-right:55px"></span>96</div>
+            <a id="PKbtn_O" class="image" href="YES"><img src="btn/PKbtn_O.svg"</a>
+            <a id="PKbtn_X" class="image" href="NO"><img src="btn/PKbtn_X.svg"</a>
+            <a id="PKtopicbox" href="http://pk.insightxplorer.com/pk.php?id=1759">你有抓過化石翼龍 QQ 嗎？</a>
+        </div>
+        <div id="PKbox">
+            <a id="PKtitle">PK</a>
+            <div id="PKbar">228<span style="padding-left:55px; padding-right:55px"></span>315</div>
+            <a id="PKbtn_O" class="image" href="YES"><img src="btn/PKbtn_O.svg"</a>
+            <a id="PKbtn_X" class="image" href="NO"><img src="btn/PKbtn_X.svg"</a>
+            <a id="PKtopicbox" href="http://pk.insightxplorer.com/pk.php?id=1759">你有孵過迷唇姐 ABC 嗎？</a>
+        </div>
+    <a id="PKnavi_R" href="toRight"><img src="btn/CarouselArrow_R.svg" /></a>
+</div>
+
+<div class="wrapper">
+    <div class="marquee">
+        <script type="text/javascript">
+        new pausescroller(pausecontent, "pscroller1", "someclass", 3000)
+        document.write("<br />")
+        new pausescroller(pausecontent2, "pscroller2", "someclass", 2000)
+        </script>
+    </div>
+    <div id="twoCol">
+        <div id="BiWeekly"> 
+            <div id="BiWeekly_dcrp">
+                <h1>雙週刊 Bi-Weekly</h1>
+                    <p1>每雙周定期出刊，提供台灣最新數位市場情報及研究數據，快速掌握市場動態資訊！</p1>
+            </div>
+            <div id="BiWeekly_img">
+                <div class="image">
+                    <img src="btn/BiWeekly.svg">
+                </div>
+            </div>
+        </div>
+        <div id="LatestEntries">
+            <p2>最新文章分享</p2>
+            <ul>
+                <a href="http://www.ixresearch.com/?p=12989">
+                <li>10/17 Pokémon Go調查與美國行動用戶使用概況</li>
+                </a>
+                <a href="http://www.ixresearch.com/?p=13016">
+                <li>10/05 Top 10 News/Information Entities in US/JP/CN/HK/TW</li>
+                </a>
+                <a href="http://www.ixresearch.com/?p=13040">
+                <li>09/30 廉價航空網站使用概況及旅遊篇市調解析</li>
+                </a>
+                <a href="http://www.ixresearch.com/?p=12989">
+                <li>09/21 Video Metrix® 2016年07月台灣網路影音使用觀察</li>
+                </a>
+                <a href="http://www.ixresearch.com/?p=13016">
+                <li>09/20 MMX™ 2016年07月台灣網路活動分析</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div style="position:absolute; top:1020px; left:710px; text-align:center; color:#bfbfbf; font-family:sans-serif; font-size:22px;">
+        <a>         
+			
+            你的意見都在這裡
+        </a>
+    </div>
+    
+    <div id="bmWrapper">
+        <div id="bm">
+            <a href="http://www.ixresearch.com/chatty-charts">
+                <div class="image">
+                <img src="img/BMchatty.png">
+                </div>
+            <a>嘰嘰喳喳的資訊圖表</a>
+            </a>
+            
+        </div>
+        <div id="bm">
+            <a href="http://bm.ixresearch.com">
+                <div class="image">
+                <img src="img/BMsite.png">
+                </div>
+            <a>BeamMedia 創媒體</a>
+            </a>
+        </div>
+        <div id="bm">
+            <a href="https://vimeo.com/beammedia">
+                <div class="image">
+                <img src="img/BMvideo.png">
+                </div>
+            <a>圖文無感 影音才棒</a>
+            </a>
+        </div>
+    </div>
+    
+    <div style="position:absolute; top:1390px; left:48.8%;">
+        <a href="#banner">         
+            <img src="btn/NaviArrow_ORG.svg">
+        </a>
+    </div>
+    
+    <div class="bannerContainer">
+        <div id="banner" style="background-image:url(img/step1.png)">
+            <div id="textbox">
+                <h2>獨一無二的你</h2>
+                <h4>每一天，你都要作出大大小小的決定，而這些決定構成了獨一無二的你。</h4>
+            </div>
+        </div>
+        <div id="banner" style="background-image:url(img/step2.png)">
+            <div id="textbox">
+                <h2>化數字為力量</h2>
+                <h4>我們想知道每一個你的想法、收集每一個你的答案。</h4>
+            </div>
+        </div>
+        <div id="banner" style="background-image:url(img/step3.png)">
+            <div id="textbox">
+                <h2>了解眾人想法</h2>
+                <h4>在 iX : Panel，不只是單向的發表意見，你還可以知道其它人在想什麼。</h4>
+            </div>
+        </div>
+        <div id="banner" style="background-image:url(img/step4.png)">
+            <div id="textbox">
+                <h2>把宇宙連起來</h2>
+                <h4>透過創市際串連起每一個你、每一個答案與決定，我們將會看見事物的輪廓。</h4>
+            </div>
+        </div>
+    </div>
+    
+    <div id="footer">
+        <div style=" 
+            width:1280px; height:100px; 
+            text-align:center;
+            line-height:80px;
+            color:#878985;
+            font-size:15px;
+            word-spacing:30px;" title="">
+                <a href="http://www.ixpanel.com/ix.jsp">關於iX:Panel</a>
+                <a href="http://www.ixpanel.com/join.jsp">如何參與</a>
+                <a href="http://www.ixpanel.com/survey.jsp">網路調查介紹</a>
+                <a href="http://www.ixpanel.com/reward.htm">好康獎勵制度</a>
+                <a href="http://www.ixpanel.com/privacy.htm">隱私權聲明</a>
+                <a href="http://www.ixpanel.com/security.jsp">安全性聲明</a>
+                <a href="http://www.ixpanel.com/faq.jsp">FAQ</a>
+                <a href="http://www.ixresearch.com">關於創市際</a>
+        </div>
+        <div style="position:absolute; 
+            width:1280px; 
+            top:73px; 
+            color:#878985; 
+            font-size:11px; 
+            text-align:center; title="">
+            Copyright © 2016 InsightXplorer
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

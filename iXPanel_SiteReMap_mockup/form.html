@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+.form-style{
+    max-width: 900px;
+	height:90px;
+    background: #FAFAFA;
+    padding: 10px;
+    margin: 50px;
+}
+.form-style ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+.form-style ul li{
+    margin-bottom: 10px;
+    min-height: 35px;
+}
+.form-style ul li  .field-style{
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    padding: 8px;
+    outline: none;
+    border: 1px solid #878985;
+	border-radius:5px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+
+}.form-style ul li  .field-style:focus{
+    border:1px solid #a3d15a;
+}
+.form-style ul li input[type="button"], 
+.form-style ul li input[type="submit"] {
+    background-color: #fff;
+    border: 3px solid #a3d15a;
+	border-radius:20px;
+    cursor: pointer;
+    color: #a3d15a;
+    padding: 5px 18px;
+    text-decoration: none;
+	font:14px, Arial, Helvetica, sans-serif;
+	font-weight:bold;
+}
+.form-style ul li input[type="button"]:hover, 
+.form-style ul li input[type="submit"]:hover {
+    background-color: #a3d15a;
+	color:#fff;
+}
+</style>
+</head>
+
+<body>
+<form class="form-style">
+<ul>
+<li>
+    <input type="email" name="field1" class="field-style" placeholder="ID/Email" />
+    <input type="password" name="field2" class="field-style" placeholder="密碼" />
+	<input type="submit" value="登入" />
+</li>
+</ul>
+</form>
+</body>
+</html>
